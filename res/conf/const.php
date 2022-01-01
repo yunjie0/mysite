@@ -26,10 +26,10 @@ Config File
 *****/
 
 /* the location of your website in your server (php) */
-$_BASE_ = 'C:/hexo/joseph/mysite';
+$_BASE_ = '';
 
 /* the location of your website in your server (html) */
-define("_HTML_BASE_", "/t/mysite");
+define("_HTML_BASE_", "");
 
 /* the name of your website*/
 define("_SITE_NAME_", "mysite");
@@ -42,7 +42,7 @@ define("_SITE_NAME_H2_", "mysite");
 define("_HOME_NAME_", "My Home");
 
 /* your avatar */
-define("_AVATAR_", _HTML_BASE_."/res/josephz");
+define("_AVATAR_", _HTML_BASE_."/res/josephz.jpg");
 
 /* your blog */
 define("_BLOG_", "https://jiaxu07.github.io");

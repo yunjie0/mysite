@@ -26,23 +26,23 @@ Config File
 *****/
 
 /* the location of your website in your server (php) */
-$_BASE_ = 'C:/hexo/joseph/mysite';
+$_BASE_ = '';
 
 /* the location of your website in your server (html) */
-define("_HTML_BASE_", "/t/mysite");
+define("_HTML_BASE_", "");
 
 /* the name of your website*/
-define("_SITE_NAME_", "Joseph Z.的小站");
+define("_SITE_NAME_", "mysite");
 
 /* your name */
-define("_MASTER_NAME_", "Joseph Z.");
-define("_SITE_NAME_H2_", "Joseph Z.'s Website");
+define("_MASTER_NAME_", "MySite");
+define("_SITE_NAME_H2_", "mysite");
 
 /* the name of your home */
-define("_HOME_NAME_", "Joseph Z.的小屋");
+define("_HOME_NAME_", "My Home");
 
 /* your avatar */
-define("_AVATAR_", _HTML_BASE_."/res/josephz");
+define("_AVATAR_", _HTML_BASE_."/res/josephz.jpg");
 
 /* your blog */
 define("_BLOG_", "https://jiaxu07.github.io");
