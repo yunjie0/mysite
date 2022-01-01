@@ -23,9 +23,9 @@
 <html>
 <head>
 <?php
-    include("./res/conf/const.php");
+    include("../res/conf/const.php");
     include(_PAGE_BG_);
-	echo '<title>'._SITE_NAME_.'</title>';
+	echo '<title>搜索 | '._HOME_NAME_.'</title>';
 ?>
 </head> 
 <body>
@@ -33,21 +33,20 @@
     include(_PAGE_HEADER_);
 ?>
     <div class="container">
-        <center>
-            <img style="border-radius:183px;zoom:40%;margin-top:25px;" src="<?php echo _HTML_BASE_;?>/res/joseph.jpg">
-            <b style="font-size:200%;"><?php echo _SITE_NAME_;?></b>
-            <h3><?php echo _SITE_NAME_H2_;?></h3>
-            
-            <a href="<?php echo _HTML_BASE_;?>/home" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/home.png" alt="小屋" title="Joseph Z.的小屋"/>
-            </a>
-            <a href="<?php echo _BLOG_;?>" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/blog.png" alt="博客" title="Joseph Z.的博客"/>
-            </a>
-            <a href="<?php echo _HTML_BASE_;?>/goto/" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/goto.png" alt="去往" title="去往"/>
-            </a>
-        </center>
+        <center><h1>搜索</h1></center>
+        <a href="./" target="_self" rel="noopener">
+            <div class="button_small">
+                <b style="font-size:15px;">离开</b><br>back
+            </div>
+        </a>
+        <a href="https://www.baidu.com" target="_blank" rel="noopener">
+            <div class="button_small">
+                <b style="font-size:15px;">百度搜索</b><br>Baidu
+            </div>
+        </a>
+<?php
+    include(_WALINE_);
+?>
     </div>
 <?php
     include(_PAGE_FOOTER_);

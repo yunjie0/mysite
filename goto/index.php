@@ -22,32 +22,29 @@
 <!doctype html>
 <html>
 <head>
+    <title>去往 ...</title>
 <?php
-    include("./res/conf/const.php");
+    include("../res/conf/const.php");
+    include("../res/conf/goto.php");
     include(_PAGE_BG_);
-	echo '<title>'._SITE_NAME_.'</title>';
 ?>
-</head> 
+    <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/goto.css" type="text/css"/>
+</head>
 <body>
 <?php
     include(_PAGE_HEADER_);
 ?>
     <div class="container">
-        <center>
-            <img style="border-radius:183px;zoom:40%;margin-top:25px;" src="<?php echo _HTML_BASE_;?>/res/joseph.jpg">
-            <b style="font-size:200%;"><?php echo _SITE_NAME_;?></b>
-            <h3><?php echo _SITE_NAME_H2_;?></h3>
-            
-            <a href="<?php echo _HTML_BASE_;?>/home" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/home.png" alt="小屋" title="Joseph Z.的小屋"/>
-            </a>
-            <a href="<?php echo _BLOG_;?>" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/blog.png" alt="博客" title="Joseph Z.的博客"/>
-            </a>
-            <a href="<?php echo _HTML_BASE_;?>/goto/" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/goto.png" alt="去往" title="去往"/>
-            </a>
-        </center>
+    <center><h1>去往</h1><div>
+<?php
+    for ($i=0; $title[$i] != "___END"; $i++) {
+        echo '<a href='.$link[$i].' target="_blank" rel="noopener"><div class="button_l"><img src="https://image.thum.io/get/width/1280/crop/800'.$link[$i].'" width=160px height=120px><br><b style="font-size:15px;">'.$title[$i].'</b><br>'.$intro[$i].'</div></a>';
+    }
+?>
+    </div></center>
+<?php
+    include(_WALINE_);
+?>
     </div>
 <?php
     include(_PAGE_FOOTER_);

@@ -1,0 +1,111 @@
+/***
+*   The Source Code of JOSEPHZ.TOP
+*   (C) 2021 Joseph Z.
+*   All rights reserved.
+*   license: BSD 3-Clause 
+***/
+/*
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+    SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+    CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+.container {
+    width: 80%;
+    margin: 1% auto 0;
+    background: rgba( 200, 210, 240, 0.75 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.25s;
+}
+.container:hover{
+    background: rgba( 255, 255, 255, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    box-shadow:  7px 7px 14px #c0c0c0,
+                 -7px -7px -14px #eeeeee;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.buttons{
+    padding:2%;
+}
+.button_huge{
+    margin:5px 0;
+    color: #222222;
+    text-align: center;
+    border-radius: 12px;
+    background: #dbdbdb;
+    box-shadow:  5px 5px 10px #c9c9c9,
+                 -5px -5px 10px #ededed;
+    width: 80%;
+    height: 55px;
+    display:inline-block;
+}
+
+.button_huge:hover{
+    border-radius: 12px;
+    background: #dbdbdb;
+    box-shadow: inset 5px 5px 10px #c9c9c9,
+                inset -5px -5px 10px #ededed;
+}
+.button_big{
+    margin:5px 0;
+    color: #222222;
+    text-align: center;
+    border-radius: 12px;
+    background: #dbdbdb;
+    box-shadow:  5px 5px 10px #c9c9c9,
+                 -5px -5px 10px #ededed;
+    width: 40%;
+    height: 55px;
+    display:inline-block;
+}
+
+.button_big:hover{
+    border-radius: 12px;
+    background: #dbdbdb;
+    box-shadow: inset 5px 5px 10px #c9c9c9,
+                inset -5px -5px 10px #ededed;
+}
+.button_small{
+    margin:5px 0;
+    color: #222222;
+    text-align: center;
+    border-radius: 12px;
+    background: #dbdbdb;
+    box-shadow:  5px 5px 10px #c9c9c9,
+                 -5px -5px 10px #ededed;
+    width: 20%;
+    height: 55px;
+    display:inline-block;
+}
+
+.button_small:hover{
+    border-radius: 12px;
+    background: #dbdbdb;
+    box-shadow: inset 5px 5px 10px #c9c9c9,
+                inset -5px -5px 10px #ededed;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+    ul li {
+        line-height: 2.3;
+    }
+a {
+    text-decoration: none;
+}
