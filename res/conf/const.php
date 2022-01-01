@@ -42,7 +42,7 @@ define("_SITE_NAME_H2_", "mysite");
 define("_HOME_NAME_", "My Home");
 
 /* your avatar */
-define("_AVATAR_", _HTML_BASE_."/res/josephz.jpg");
+define("_AVATAR_", _HTML_BASE_."/res/joseph.jpg");
 
 /* your blog */
 define("_BLOG_", "https://jiaxu07.github.io");
