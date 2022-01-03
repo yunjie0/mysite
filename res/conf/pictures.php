@@ -22,8 +22,8 @@
 <?php
 
 //---------------------------------------
-define("_PICTURES_NUM_", 10);
+define("_PICTURES_NUM_", "");	// total pictures (background)
 //---------------------------------------
 
-define("_BG_GROUP_", "wall");
+define("_BG_GROUP_", "");	// background pictures' group
 ?>

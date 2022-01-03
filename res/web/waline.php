@@ -25,6 +25,6 @@
 <script>
 Waline({
   el: '#waline',
-  serverURL: 'https://blog-api-mroxoa8vg-jiaxu07.vercel.app/',
+  serverURL: '',	// your url
 });
 </script>

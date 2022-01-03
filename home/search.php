@@ -45,7 +45,7 @@
             </div>
         </a>
 <?php
-    include(_WALINE_);
+    include(_COMMENT_);
 ?>
     </div>
 <?php

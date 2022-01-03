@@ -66,7 +66,7 @@
 <?php
     echo '<p>'.$intro[$id].'</p>';
 ?><?php
-    include(_WALINE_);
+    include(_COMMENT_);
 ?>
     </div>
 <?php

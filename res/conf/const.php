@@ -45,17 +45,27 @@ define("_HOME_NAME_", "My Home");
 define("_AVATAR_", _HTML_BASE_."/res/joseph.jpg");
 
 /* your blog */
-define("_BLOG_", "https://jiaxu07.github.io");
+define("_BLOG_", "");
 
 /* your document site */
-define("_DOCS_", "http://doc.josephz.top");
+define("_DOCS_", "");
 
 /* your site which is used to play or relax */
-define("_RELAX_", "http://mc.josephz.top");
+define("_RELAX_", "");
+
+/* your comment system */
+/* 
+   supported:
+   waline
+   
+   format: '_COMMENT_xxx', like '_COMMENT_waline'
+ */
+define("_COMMENT_", "_COMMENT_xxx");
 
 /* do not change */
 define("_PAGE_HEADER_", $_BASE_."/res/web/header.php");
 define("_PAGE_FOOTER_", $_BASE_."/res/web/footer.php");
 define("_PAGE_BG_", $_BASE_."/res/web/bg.php");
-define("_WALINE_", $_BASE_."/res/web/waline.php");
+define("_COMMENT_xxx", "");
+define("_COMMENT_waline", $_BASE_."/res/web/waline.php");
 ?>

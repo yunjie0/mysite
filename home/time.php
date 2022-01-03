@@ -101,6 +101,9 @@
         <div id="time_card"></div>
         <div id="bl"></div>
         <div id='bl_p'></div>
+<?php
+    include(_COMMENT_);
+?>
     </div>
 <?php
     include(_PAGE_FOOTER_);
