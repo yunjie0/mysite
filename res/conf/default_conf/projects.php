@@ -20,36 +20,60 @@
 */
 ?>
 <?php
+/* names of your projects */
 $name=array(
-    "MySite",
-    "Web Clock"
+    "project",
 ,"___END");
+/*
+	Sites of your projects
+	- address
+	- 'disabled': do not want to put your site
+*/
 $link=array(
-    "disabled",
     "disabled"
 );
+/*
+	Covers
+*/
 $img=array(
-    _HTML_BASE_."/res/img/projects/mysite.png",
-    _HTML_BASE_."/res/img/projects/webclock.png"
+    "xxx"
 );
+/*
+	introductions
+*/
 $intro=array(
-    "我的个人网站",
-    "网络时钟"
+    "introduction"
 );
+/*
+	Open source code or not.
+	if open, input the lisense's name
+	if not, input 'disabled'
+*/
 $opensrc=array(
-    "BSD-3 Clause",
     "BSD-3 Clause"
 );
+/* enable github or not */
+/*
+	if enable, input the repo's address
+	if not, input 'disabled'
+*/
 $github=array(
-    "https://github.com/jiaxu07/mysite",
-    "https://github.com/jiaxu07/webclock"
+    "https://github.com/xxx/xxx"
 );
+/* enable gitee or not */
+/*
+	if enable, input the repo's address
+	if not, input 'disabled'
+*/
 $gitee=array(
-    "disabled",
-    "disabled"
+    "https://gitee.com/xxx/xxx"
 );
+/* enable download or not */
+/*
+	if enable, input the downloading address
+	if not, input 'disabled'
+*/
 $download=array(
-    "disabled",
     "disabled"
 );
 ?>
