@@ -82,7 +82,7 @@
 	</style>
 <?php
     include("../res/conf/const.php");
-    include(_PAGE_BG_);
+    include(_INCLUDE_);
 	echo '<title>时间 | '._HOME_NAME_.'</title>';
 ?>
 </head> 
@@ -90,10 +90,10 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class="container">
+    <div class=<?php echo $styl_container;?>>
         <center><h1>时间</h1></center>
         <a href="./" target="_self" rel="noopener">
-            <div class="button_small">
+            <div class=<?php echo $styl_button_small;?>>
                 <b style="font-size:15px;">离开</b><br>back
             </div>
         </a>

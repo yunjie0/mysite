@@ -19,40 +19,37 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 ?>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/header.css" type="text/css"/>
-    <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/img.css" type="text/css"/>
-    <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/footer.css" type="text/css"/>
-    <script src="<?php echo _HTML_BASE_;?>/res/js/jquery-3.4.1.min.js" type="text/javascript"></script>
-</head> 
-<body>
-<div class="header">
+
+<div class=<?php echo $styl_header;?>>
     <a href="<?php echo _HTML_BASE_;?>/" target="_parent" rel="noopener">
         <img style="border-radius:200px;zoom:20%;" src="<?php echo _AVATAR_;?>">
-        <b style="font-size:25px;color:black;"><?php echo _MASTER_NAME_;?></b>
+        <b style="font-size:25px;color:<?php 
+				if ($_ENABLE_DARK_MODE_ == true) echo '#888888';
+				else echo '#000000';?>;"><?php echo _MASTER_NAME_;?></b>
     </a>
     <a href="<?php echo _HTML_BASE_;?>/home" target="_parent" rel="noopener">
-        <div class="header_card">
+        <div class=<?php echo $styl_header_card;?>>
             <p style="font-size:20px;">小屋</p>
         </div>
     </a>
     <a href="<?php echo _BLOG_;?>" target="_parent" rel="noopener">
-        <div class="header_card">
+        <div class=<?php echo $styl_header_card;?>>
             <p style="font-size:20px;">博客</p>
         </div>
     </a>
     <a href="<?php echo _HTML_BASE_;?>/goto/" target="_parent" rel="noopener">
-        <div class="header_card">
+        <div class=<?php echo $styl_header_card;?>>
             <p style="font-size:20px;">去往</p>
         </div>
     </a>
+<?php
+if (_TRAVELLING_ENABLE_ == true){
+	echo '
     <a href="https://travellings.link" target="_blank" rel="noopener">
-        <div class="header_card">
+        <div class='.$styl_header_card.'>
             <p style="font-size:20px;">🚇开往</p>
         </div>
-    </a>
+    </a>';
+}
+?>
 </div>
-</body>

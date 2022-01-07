@@ -20,17 +20,17 @@
 */
 ?>
 <?php
-$goto_title=array(
-        "世界上第一个网站",
-        "WCC实验室官网"
-,"___END");
-$goto_link=array(
-        "http://info.cern.ch",
-        "https://wcc.group"
-);
-/* Introductions */
-$goto_intro=array(
-        "info.cern.ch",
-        "wcc.group"
-);
+
+/*****
+Config File
+*****/
+
+include($_BASE_."/res/conf/pictures.php");
+include($_BASE_."/res/conf/head.php");
+include($_BASE_."/res/conf/videos.php");
+include($_BASE_."/res/conf/goto.php");
+include($_BASE_."/res/conf/projects.php");
+include(_DARKMODE_);
+include(_PAGE_BG_);
+
 ?>

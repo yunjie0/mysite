@@ -20,15 +20,20 @@
 */
 ?>
 <?php
-include($_BASE_."/res/conf/pictures.php");
 echo '<style>body{
-background:url('._HTML_BASE_.'/res/img/pictures/'._BG_GROUP_.'/'.rand(0,_PICTURES_NUM_).'.jpg);
-background-attachment:fixed;
-background-color: rgb(225,235,255);
-background-position: center top;
-background-position: right bottom;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment:fixed;
-}</style>';
+	background-color: ';
+if ($_ENABLE_DARK_MODE_) echo _BG_COLOR_DARK_;
+else echo _BG_COLOR_;
+	
+echo ';';
+if (_SUPPORT_BG_) {
+	echo '	background:url('._HTML_BASE_.'/res/img/pictures/'._BG_GROUP_.'/'.rand(0,_PICTURES_NUM_).'.jpg);
+	background-attachment:fixed;
+	background-position: center top;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;';
+}
+echo '}</style>';
 ?>

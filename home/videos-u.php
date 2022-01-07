@@ -24,10 +24,9 @@
 <head>
 <?php
     include("../res/conf/const.php");
-    include($_BASE_."/res/conf/videos.php");
-    include(_PAGE_BG_);
+    include(_INCLUDE_);
     $id=$_REQUEST['id'];
-    echo '<title>'.$title[$id].'- 视频 | '._HOME_NAME_.'</title>';
+    echo '<title>'.$v_title[$id].'- 视频 | '._HOME_NAME_.'</title>';
 ?>
     <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/home/video.css" type="text/css"/>
 </head>
@@ -35,36 +34,36 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class="container">
+    <div class=<?php echo $styl_container;?>>
     <center><h1>视频</h1>
 <?php
-    echo '<h2>'.$title[$id].'</h2>';
-    if ($videolink[$id] != "disabled")
+    echo '<h2>'.$v_title[$id].'</h2>';
+    if ($v_videolink[$id] != "disabled")
     {
         echo '<video width="640" height="480" controls="controls">
-        <source src="'.$videolink[$id].'" type="video/mp4" />
-        <source src="'.$videolink[$id].'" type="video/ogg" />
-        <source src="'.$videolink[$id].'" type="video/webm" />
-        <object data="'.$videolink[$id].'" width="640" height="480">
-        <embed src="'.$videolink[$id].'" width="640" height="480" />
+        <source src="'.$v_videolink[$id].'" type="video/mp4" />
+        <source src="'.$v_videolink[$id].'" type="video/ogg" />
+        <source src="'.$v_videolink[$id].'" type="video/webm" />
+        <object data="'.$v_videolink[$id].'" width="640" height="480">
+        <embed src="'.$v_videolink[$id].'" width="640" height="480" />
         </object>
         </video>';
-    } elseif ($bilibli[$id] != "disabled")
+    } elseif ($v_bilibili[$id] != "disabled")
     {
-        echo '<iframe src="//player.bilibili.com/player.html?'.$bilibili[$id].'&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=640 height=480></iframe>';
+        echo '<iframe src="//player.bilibili.com/player.html?'.$v_bilibili[$id].'&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=640 height=480></iframe>';
     } else
     {
         echo '<p>The video is not found.</p>';
     }
 ?>
     </center>
-    <a href="/home/videos.php" target="_self" rel="noopener">
-        <div class="button_small">
+    <a href="<?php echo _HTML_BASE_?>/home/videos.php" target="_self" rel="noopener">
+        <div class=<?php echo $styl_button_small;?>>
             <b style="font-size:15px;">离开</b><br>back
         </div>
     </a>
 <?php
-    echo '<p>'.$intro[$id].'</p>';
+    echo '<p>'.$v_intro[$id].'</p>';
 ?><?php
     include(_COMMENT_);
 ?>

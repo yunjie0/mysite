@@ -21,27 +21,27 @@
 ?>
 <?php
 /* names of your projects */
-$name=array(
-    "project",
+$pj_name=array(
+    "project"
 ,"___END");
 /*
 	Sites of your projects
 	- address
 	- 'disabled': do not want to put your site
 */
-$link=array(
+$pj_link=array(
     "disabled"
 );
 /*
 	Covers
 */
-$img=array(
+$pj_img=array(
     "xxx"
 );
 /*
 	introductions
 */
-$intro=array(
+$pj_intro=array(
     "introduction"
 );
 /*
@@ -49,7 +49,7 @@ $intro=array(
 	if open, input the lisense's name
 	if not, input 'disabled'
 */
-$opensrc=array(
+$pj_opensrc=array(
     "BSD-3 Clause"
 );
 /* enable github or not */
@@ -57,7 +57,7 @@ $opensrc=array(
 	if enable, input the repo's address
 	if not, input 'disabled'
 */
-$github=array(
+$pj_github=array(
     "https://github.com/xxx/xxx"
 );
 /* enable gitee or not */
@@ -65,7 +65,7 @@ $github=array(
 	if enable, input the repo's address
 	if not, input 'disabled'
 */
-$gitee=array(
+$pj_gitee=array(
     "https://gitee.com/xxx/xxx"
 );
 /* enable download or not */
@@ -73,7 +73,7 @@ $gitee=array(
 	if enable, input the downloading address
 	if not, input 'disabled'
 */
-$download=array(
+$pj_download=array(
     "disabled"
 );
 ?>

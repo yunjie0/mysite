@@ -19,18 +19,27 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 ?>
-<?php
-$goto_title=array(
-        "世界上第一个网站",
-        "WCC实验室官网"
-,"___END");
-$goto_link=array(
-        "http://info.cern.ch",
-        "https://wcc.group"
-);
-/* Introductions */
-$goto_intro=array(
-        "info.cern.ch",
-        "wcc.group"
-);
+<?php	
+	/* enable dark mode or not */
+	$_ENABLE_DARK_MODE_ = false;
+	$dark='';
+	if ($_ENABLE_DARK_MODE_ == true) {
+		$dark='_dark';
+		echo '<style>a{
+	color: #6666ee ;		
+}</style>'; 	
+	}
+	else {
+		echo '<style>a{
+	color: #0000ff ;
+}</style>';
+	}
+		
+	$styl_container='container'.$dark;
+	$styl_header='header'.$dark;
+	$styl_header_card='header_card'.$dark;
+	$styl_footer='footer'.$dark;
+	$styl_button_small='button_small'.$dark;
+	$styl_button_big='button_big'.$dark;
+	$styl_button_huge='button_huge'.$dark;
 ?>

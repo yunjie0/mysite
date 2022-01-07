@@ -24,8 +24,7 @@
 <head>
 <?php
     include("../res/conf/const.php");
-    include($_BASE_."/res/conf/projects.php");
-    include(_PAGE_BG_);
+    include(_INCLUDE_);
 	echo '<title>项目 |'._HOME_NAME_.'</title>';
 ?>
     <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/home/project.css" type="text/css"/>
@@ -34,42 +33,42 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class="container">
+    <div class=<?php echo $styl_container;?>>
         <center><h1>项目</h1></center>
         <a href="./" target="_self" rel="noopener">
-            <div class="button_small">
+            <div class=<?php echo $styl_button_small;?>>
                 <b style="font-size:15px;">离开</b><br>back
             </div>
         </a>
         
 <?php
-    for ($i=0; $name[$i] != "___END"; $i++) {
-        if ($link[$i] != "disabled")
+    for ($i=0; $pj_name[$i] != "___END"; $i++) {
+        if ($pj_link[$i] != "disabled")
         {
-            echo '<a href='.$link[$i].' target="_blank" rel="noopener">';
+            echo '<a href='.$pj_link[$i].' target="_blank" rel="noopener">';
         }
-        echo '<div class="proj_block"><img src="'.$img[$i].'" width=300px height=240px><span><b style="font-size:15px;">'.$name[$i].'</b><br>'.$intro[$i].'<br>';
+        echo '<div class="proj_block"><img src="'.$v_img[$i].'" width=300px height=240px><span><b style="font-size:15px;">'.$pj_name[$i].'</b><br>'.$pj_intro[$i].'<br>';
         
-        if ($opensrc[$i] == "disabled")
+        if ($pj_opensrc[$i] == "disabled")
         {
             echo '未开源';
         } else
         {
-            echo '开源协议: '.$opensrc[$i];
+            echo '开源协议: '.$pj_opensrc[$i];
         }
         echo '<br>';
         
-        if ($github[$i] != "disabled")
+        if ($pj_github[$i] != "disabled")
         {
-            echo ' | <a href="'.$github[$i].'" target="_blank">Github</a>';
+            echo ' | <a href="'.$pj_github[$i].'" target="_blank">Github</a>';
         }
-        if ($gitee[$i] != "disabled")
+        if ($pj_gitee[$i] != "disabled")
         {
-            echo ' | <a href="'.$gitee[$i].'" target="_blank">Gitee</a>';
+            echo ' | <a href="'.$pj_gitee[$i].'" target="_blank">Gitee</a>';
         }
-        if ($download[$i] != "disabled")
+        if ($pj_download[$i] != "disabled")
         {
-            echo ' | <a href="'.$download[$i].'" target="_blank">Download</a>';
+            echo ' | <a href="'.$pj_download[$i].'" target="_blank">Download</a>';
         } 
         echo ' |</span></div>';
         echo '</a>';

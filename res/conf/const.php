@@ -26,10 +26,10 @@ Config File
 *****/
 
 /* the location of your website in your server (php) */
-$_BASE_ = '';
+$_BASE_ = 'C:/hexo/joseph/mysite';
 
 /* the location of your website in your server (html) */
-define("_HTML_BASE_", "");
+define("_HTML_BASE_", "/t/mysite");
 
 /* the name of your website*/
 define("_SITE_NAME_", "mysite");
@@ -42,7 +42,7 @@ define("_SITE_NAME_H2_", "mysite");
 define("_HOME_NAME_", "My Home");
 
 /* your avatar */
-define("_AVATAR_", _HTML_BASE_."/res/joseph.jpg");
+define("_AVATAR_", _HTML_BASE_."/res/avatar.png");
 
 /* your blog */
 define("_BLOG_", "");
@@ -53,6 +53,27 @@ define("_DOCS_", "");
 /* your site which is used to play or relax */
 define("_RELAX_", "");
 
+/* support background or not (true or false) */
+define("_SUPPORT_BG_", false);
+
+/* main color */
+define("_MAIN_COLOR_", "#95afff");			// light
+define("_MAIN_COLOR_DARK_", "#051f7f");		// dark
+
+
+// ------------------------------------------------------------
+
+/* Files and functions. Do not change unless you know what you will do! */
+define("_INCLUDE_", $_BASE_."/res/conf/include.php");
+define("_PAGE_HEADER_", $_BASE_."/res/web/header.php");
+define("_PAGE_FOOTER_", $_BASE_."/res/web/footer.php");
+define("_PAGE_BG_", $_BASE_."/res/web/bg.php");
+define("_DARKMODE_", $_BASE_."/res/web/darkmode.php");
+define("_COMMENT_xxx",  $_BASE_."/res/web/comment_none.php");
+define("_COMMENT_waline", $_BASE_."/res/web/waline.php");
+
+// ------------------------------------------------------------
+
 /* your comment system */
 /* 
    supported:
@@ -60,12 +81,8 @@ define("_RELAX_", "");
    
    format: '_COMMENT_xxx', like '_COMMENT_waline'
  */
-define("_COMMENT_", "_COMMENT_xxx");
+define("_COMMENT_", _COMMENT_xxx);
 
-/* do not change */
-define("_PAGE_HEADER_", $_BASE_."/res/web/header.php");
-define("_PAGE_FOOTER_", $_BASE_."/res/web/footer.php");
-define("_PAGE_BG_", $_BASE_."/res/web/bg.php");
-define("_COMMENT_xxx", "");
-define("_COMMENT_waline", $_BASE_."/res/web/waline.php");
+define("_TRAVELLING_ENABLE_", true);
+
 ?>

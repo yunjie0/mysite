@@ -19,7 +19,7 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 ?>
-<center><div class="footer">
+<center><div class=<?php echo $styl_footer;?>>
     <p>(C) 2021-2022 Joseph Z.</p>
     <p>
         <a href="https://github.com/jiaxu07" target="_blank" rel="noopener"><img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/connect/github.webp" height=20 width=20></a>

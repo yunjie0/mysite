@@ -24,8 +24,7 @@
 <head>
 <?php
     include("../res/conf/const.php");
-    include($_BASE_."/res/conf/videos.php");
-    include(_PAGE_BG_);
+    include(_INCLUDE_);
 	echo '<title>视频 | '._HOME_NAME_.'</title>';
 ?>
     <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/home/video.css" type="text/css"/>
@@ -34,28 +33,28 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class="container">
+    <div class=<?php echo $styl_container;?>>
     <center><h1>视频</h1></center>
     <a href="./" target="_self" rel="noopener">
-        <div class="button_small">
+        <div class=<?php echo $styl_button_small;?>>
             <b style="font-size:15px;">离开</b><br>back
         </div>
     </a>
     <center><div>
 <?php
-    for ($i=0; $title[$i] != "___END"; $i++) {
+    for ($i=0; $v_title[$i] != "___END"; $i++) {
         echo '<a href="videos-u.php?id='.$i.'" target="_parent" rel="noopener"><div class="v_block"><img src="';
-        if ($img[$i] == "default")
+        if ($v_img[$i] == "default")
         {
             echo _HTML_BASE_.'/res/img/videos/'.$i.'.jpg"';
-        } elseif ($img[$i] == "none")
+        } elseif ($v_img[$i] == "none")
         {
             echo _HTML_BASE_.'/res/img/videos/none.png"';
         } else
         {
-            echo $img[$i];
+            echo $v_img[$i];
         }
-        echo 'width=128 height=80 style="vertical-align:middle;"><br><b style="font-size:15px;">'.$title[$i].'</b></div></a>';
+        echo 'width=128 height=80 style="vertical-align:middle;"><br><b style="font-size:15px;">'.$v_title[$i].'</b></div></a>';
     }
 ?>
     </div></center>

@@ -25,8 +25,7 @@
     <title>去往 ...</title>
 <?php
     include("../res/conf/const.php");
-    include("../res/conf/goto.php");
-    include(_PAGE_BG_);
+    include(_INCLUDE_);
 ?>
     <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/goto.css" type="text/css"/>
 </head>
@@ -34,11 +33,11 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class="container">
+    <div class=<?php echo $styl_container;?>>
     <center><h1>去往</h1><div>
 <?php
-    for ($i=0; $title[$i] != "___END"; $i++) {
-        echo '<a href='.$link[$i].' target="_blank" rel="noopener"><div class="button_l"><img src="https://image.thum.io/get/width/1280/crop/800'.$link[$i].'" width=160px height=120px><br><b style="font-size:15px;">'.$title[$i].'</b><br>'.$intro[$i].'</div></a>';
+    for ($i=0; $goto_title[$i] != "___END"; $i++) {
+        echo '<a href='.$goto_link[$i].' target="_blank" rel="noopener"><div class="button_l"><img src="https://image.thum.io/get/width/1280/crop/800/'.$goto_link[$i].'" width=160px height=120px><br><b style="font-size:15px;">'.$goto_title[$i].'</b><br>'.$goto_intro[$i].'</div></a>';
     }
 ?>
     </div></center>

@@ -1,3 +1,4 @@
 /res/conf/joseph_conf
-favicon.jpg
-robot.txt
+/res/conf/*.php
+/favicon.jpg
+/robot.txt

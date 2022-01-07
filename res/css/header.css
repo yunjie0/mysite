@@ -44,3 +44,33 @@
     box-shadow: inset 5px 5px 10px #c9c9c9,
                 inset -5px -5px 10px #ededed;
 }
+
+.header_dark {
+    width: 100%;
+    background: rgba( 0, 10, 40, 0.75 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 0, 0, 0, 0.18 );
+    transition: 0.25s;
+	color: #888888; 
+}
+.header_dark:hover{
+    background: rgba( 0, 0, 0, 0.85 );
+}
+
+.header_card_dark{
+    margin:5px 0;
+    color: #777777;
+    text-align: center;
+    border-radius: 12px;
+    width: 120px;
+    display:inline-block;
+}
+
+.header_card_dark:hover{
+    border-radius: 12px;
+    background: #5b5b5b;
+    box-shadow: inset 5px 5px 10px #494949,
+                inset -5px -5px 10px #6d6d6d;
+}

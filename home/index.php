@@ -21,9 +21,10 @@
 ?>
 <!doctype html>
 <html>
+<head>
 <?php
     include("../res/conf/const.php");
-    include(_PAGE_BG_);
+    include(_INCLUDE_);
 	echo '<title>'._HOME_NAME_.'</title>';
 ?>
 </head> 
@@ -31,39 +32,39 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class="container">
+    <div class=<?php echo $styl_container;?>>
         <center>
 			<h1>小屋</h1>
             <h3><?php echo _HOME_NAME_;?></h3>
             <div>
                 <a href="search.php" target="_self" rel="noopener">
-                    <div class="button_big">
+                    <div class=<?php echo $styl_button_big;?>>
                         <b style="font-size:15px;">搜索</b><br>search
                     </div>
                 </a>
                 <a href="time.php" target="_self" rel="noopener">
-                    <div class="button_big">
+                    <div class=<?php echo $styl_button_big;?>>
                         <b style="font-size:15px;">时间</b><br>time
                     </div>
                 </a>
                 <a href="projects.php" target="_self" rel="noopener">
-                    <div class="button_big">
+                    <div class=<?php echo $styl_button_big;?>>
                         <b style="font-size:15px;">项目</b><br>projects
                     </div>
                 </a>
                 <a href="videos.php" target="_self" rel="noopener">
-                    <div class="button_big">
+                    <div class=<?php echo $styl_button_big;?>>
                         <b style="font-size:15px;">视频</b><br>video
                     </div>
                 </a>
                 
                 <a href="<?php echo _DOCS_;?>" target="_self" rel="noopener">
-                    <div class="button_big">
+                    <div class=<?php echo $styl_button_big;?>>
                         <b style="font-size:15px;">文档</b><br>doc
                     </div>
                 </a>
                 <a href="<?php echo _RELAX_;?>" target="_self" rel="noopener">
-                    <div class="button_big">
+                    <div class=<?php echo $styl_button_big;?>>
                         <b style="font-size:15px;">休闲</b><br>relax
                     </div>
                 </a>
