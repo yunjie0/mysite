@@ -32,4 +32,17 @@
     background: #e0e0e0;
     box-shadow: inset 10px 10px 20px #bebebe,
                 inset -10px -10px 20px #ffffff;
+}.v_block_dark {
+    border-radius: 12px;
+    margin:8px 0;
+    background: #5b5b5b;
+    color: #dddddd;
+    box-shadow:  5px 5px 10px #494949,
+                 -5px -5px 10px #6d6d6d;
+    width: 45%;
+    display:inline-block;
+}
+.v_block_dark:hover {
+    box-shadow: inset 5px 5px 10px #494949,
+                inset -5px -5px 10px #6d6d6d;
 }

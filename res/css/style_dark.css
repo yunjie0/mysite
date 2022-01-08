@@ -26,7 +26,8 @@
     border-radius: 10px;
     border: 1px solid rgba( 0, 0, 0, 0.18 );
     transition: 0.25s;
-	color: #888888; 
+    padding: 1% 2%;
+    color: #dddddd; 
 }
 .container_dark:hover{
     background: rgba( 0, 0, 0, 0.85 );
@@ -41,7 +42,7 @@
 
 .button_huge_dark{
     margin:5px 0;
-    color: #888888;
+    color: #dddddd;
     text-align: center;
     border-radius: 12px;
     background: #5b5b5b;
@@ -60,7 +61,7 @@
 }
 .button_big_dark{
     margin:5px 0;
-    color: #888888;
+    color: #dddddd;
     text-align: center;
     border-radius: 12px;
     background: #5b5b5b;
@@ -79,7 +80,7 @@
 }
 .button_small_dark{
     margin:5px 0;
-    color: #888888;
+    color: #dddddd;
     text-align: center;
     border-radius: 12px;
     background: #5b5b5b;

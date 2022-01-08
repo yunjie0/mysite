@@ -40,10 +40,11 @@
             <b style="font-size:15px;">离开</b><br>back
         </div>
     </a>
+    <br><br>
     <center><div>
 <?php
     for ($i=0; $v_title[$i] != "___END"; $i++) {
-        echo '<a href="videos-u.php?id='.$i.'" target="_parent" rel="noopener"><div class="v_block"><img src="';
+        echo '<a href="videos-u.php?id='.$i.'" target="_parent" rel="noopener"><div class='.$styl_v_block.'><img src="';
         if ($v_img[$i] == "default")
         {
             echo _HTML_BASE_.'/res/img/videos/'.$i.'.jpg"';

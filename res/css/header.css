@@ -53,7 +53,7 @@
     border-radius: 10px;
     border: 1px solid rgba( 0, 0, 0, 0.18 );
     transition: 0.25s;
-	color: #888888; 
+	color: #dddddd; 
 }
 .header_dark:hover{
     background: rgba( 0, 0, 0, 0.85 );
@@ -61,7 +61,7 @@
 
 .header_card_dark{
     margin:5px 0;
-    color: #777777;
+    color: #c6c6c6;
     text-align: center;
     border-radius: 12px;
     width: 120px;
@@ -69,8 +69,6 @@
 }
 
 .header_card_dark:hover{
-    border-radius: 12px;
-    background: #5b5b5b;
     box-shadow: inset 5px 5px 10px #494949,
                 inset -5px -5px 10px #6d6d6d;
 }

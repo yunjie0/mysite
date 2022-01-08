@@ -27,6 +27,7 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: 0.25s;
+	padding: 1% 2%;
 }
 .footer:hover{
     background: rgba( 255, 255, 255, 0.85 );
@@ -43,7 +44,8 @@
     border-radius: 10px;
     border: 1px solid rgba( 0, 0, 0, 0.18 );
     transition: 0.25s;
-	color: #888888;
+	color: #dddddd;
+	padding: 1% 2%;
 }
 .footer_dark:hover{
     background: rgba( 0, 0, 0, 0.85 );

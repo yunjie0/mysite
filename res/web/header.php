@@ -24,7 +24,7 @@
     <a href="<?php echo _HTML_BASE_;?>/" target="_parent" rel="noopener">
         <img style="border-radius:200px;zoom:20%;" src="<?php echo _AVATAR_;?>">
         <b style="font-size:25px;color:<?php 
-				if ($_ENABLE_DARK_MODE_ == true) echo '#888888';
+				if ($_ENABLE_DARK_MODE_ == true) echo '#dddddd';
 				else echo '#000000';?>;"><?php echo _MASTER_NAME_;?></b>
     </a>
     <a href="<?php echo _HTML_BASE_;?>/home" target="_parent" rel="noopener">

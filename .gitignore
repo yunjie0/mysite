@@ -1,4 +1,10 @@
 /res/conf/joseph_conf
-/res/conf/*.php
+/res/conf/goto.php
+/res/conf/projects.php
+/res/conf/videos.php
+/res/conf/pictures.php
+/res/conf/head.php
+/res/conf/include.php
+/res/conf/const.php
 /favicon.jpg
 /robot.txt

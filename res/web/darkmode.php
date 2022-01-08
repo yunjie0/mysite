@@ -26,8 +26,11 @@
 	if ($_ENABLE_DARK_MODE_ == true) {
 		$dark='_dark';
 		echo '<style>a{
-	color: #6666ee ;		
-}</style>'; 	
+		color: #5555ee ;
+	}
+	html {
+		filter: brightness(60%);
+	}</style>'; 	
 	}
 	else {
 		echo '<style>a{
@@ -42,4 +45,7 @@
 	$styl_button_small='button_small'.$dark;
 	$styl_button_big='button_big'.$dark;
 	$styl_button_huge='button_huge'.$dark;
+	$styl_proj_block='proj_block'.$dark;
+	$styl_v_block='v_block'.$dark;
+	$styl_gt_button_l='gt_button_l'.$dark;
 ?>

@@ -20,32 +20,22 @@
 <!doctype html>
 <html>
 <head>
-    <title>404 | Joseph Z.的小站</title>
 <?php
     include("../res/conf/const.php");
-    include(_PAGE_BG_);
+	include(_INCLUDE_);
+    echo '<title>404 | '._SITE_NAME_.'</title>';
 ?>
 </head> 
 <body>
-<?php
-    include(_PAGE_HEADER_);
-?>
-    <div class="container">
+    <div class=<?php echo $styl_container;?>>
         <center>
-            <h1>404</h1>
-            <h3>抱歉，找不到请求的文件</h3>
-            
-            <a href="/" target="_self" rel="noopener">
-                <div class="button_big">
-                    <b style="font-size:15px;">回到主页</b><br>Site
-                </div>
-            </a>
-            <a href="/goto/" target="_self" rel="noopener">
-                <div class="button_big">
-                    <b style="font-size:15px;">去往</b><br>Go to
-                </div>
-            </a>
+			<img src="<?php echo _HTML_BASE_;?>/res/img/errorpage/404.png"/>
         </center>
+            <br><a href="<?php echo _HTML_BASE_;?>" target="_self" rel="noopener">
+                <div class=<?php echo $styl_button_small;?>>
+                    <b style="font-size:15px;">主页</b><br>Index
+                </div>
+            </a>
     </div>
 <?php
     include(_PAGE_FOOTER_);
