@@ -30,6 +30,7 @@ include($_BASE_."/res/conf/head.php");
 include($_BASE_."/res/conf/videos.php");
 include($_BASE_."/res/conf/goto.php");
 include($_BASE_."/res/conf/projects.php");
+include($_BASE_."/res/web/version.php");
 include(_DARKMODE_);
 include(_PAGE_BG_);
 

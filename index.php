@@ -38,15 +38,14 @@
             <b style="font-size:200%;"><?php echo _SITE_NAME_;?></b>
             <h3><?php echo _SITE_NAME_H2_;?></h3>
             
-            <a href="<?php echo _HTML_BASE_;?>/home" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/home.png" alt="小屋" title=<?php echo _HOME_NAME_;?>/>
-            </a>
-            <a href="<?php echo _BLOG_;?>" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/blog.png" alt="博客" title="<?php echo _MASTER_NAME_;?>的博客"/>
-            </a>
-            <a href="<?php echo _HTML_BASE_;?>/goto/" target="_self" rel="noopener">
-                <img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/site/goto.png" alt="去往" title="去往"/>
-            </a>
+<?php
+	for ($i=0; $local_pages[$i] != "___END"; $i++) {
+		echo '<a href='._HTML_BASE_.$local_pages[$i].' target="_self" rel="noopener"><img id="img_r" src='.$local_pages_img[$i].' alt='.$local_pages_title[$i].' title='.$local_pages_title[$i].' /></a>';
+	}
+	for ($i=0; $other_pages[$i] != "___END"; $i++) {
+		echo '<a href='.$other_pages[$i].' target="_self" rel="noopener"><img id="img_r" src='.$other_pages_img[$i].' alt='.$other_pages_title[$i].' title='.$other_pages_title[$i].' /></a>';
+	}
+?>
         </center>
     </div>
 <?php

@@ -37,37 +37,14 @@
 			<h1>小屋</h1>
             <h3><?php echo _HOME_NAME_;?></h3>
             <div>
-                <a href="search.php" target="_self" rel="noopener">
-                    <div class=<?php echo $styl_button_big;?>>
-                        <b style="font-size:15px;">搜索</b><br>search
-                    </div>
-                </a>
-                <a href="time.php" target="_self" rel="noopener">
-                    <div class=<?php echo $styl_button_big;?>>
-                        <b style="font-size:15px;">时间</b><br>time
-                    </div>
-                </a>
-                <a href="projects.php" target="_self" rel="noopener">
-                    <div class=<?php echo $styl_button_big;?>>
-                        <b style="font-size:15px;">项目</b><br>projects
-                    </div>
-                </a>
-                <a href="videos.php" target="_self" rel="noopener">
-                    <div class=<?php echo $styl_button_big;?>>
-                        <b style="font-size:15px;">视频</b><br>video
-                    </div>
-                </a>
-                
-                <a href="<?php echo _DOCS_;?>" target="_self" rel="noopener">
-                    <div class=<?php echo $styl_button_big;?>>
-                        <b style="font-size:15px;">文档</b><br>doc
-                    </div>
-                </a>
-                <a href="<?php echo _RELAX_;?>" target="_self" rel="noopener">
-                    <div class=<?php echo $styl_button_big;?>>
-                        <b style="font-size:15px;">休闲</b><br>relax
-                    </div>
-                </a>
+<?php
+	for ($i=0; $home_pages_local[$i] != "___END"; $i++) {
+		echo '<a href="'._HTML_BASE_.'/home/'.$home_pages_local[$i].'.php" target="_self" rel="noopener"><div class='.$styl_button_big.'><b style="font-size:15px;">'.$home_pages_local_title[$i].'</b><br>'.$home_pages_local_intro[$i].'</div></a>';
+	}
+	for ($i=0; $home_pages_other[$i] != "___END"; $i++) {
+		echo '<a href='._HTML_BASE_.'/home/'.$home_pages_other[$i].' target="_self" rel="noopener"><div class='.$styl_button_big.'><b style="font-size:15px;">'.$home_pages_other_title[$i].'</b><br>'.$home_pages_other_intro[$i].'</div></a>';
+	}
+?>
             </div>
         </center>
 <?php

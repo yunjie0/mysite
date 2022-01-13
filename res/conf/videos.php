@@ -23,7 +23,7 @@
 /*
 	titles
 */
-$v_title=array(
+$v_title=array(/* v0.0.1 */
     "元首的愤怒",
     "歌唱动荡的青春 红场千人大合唱版本"
 ,"___END");
@@ -33,14 +33,14 @@ $v_title=array(
 	- 'default': /res/img/videos/xxx(video number).jpg
 	- address
 */
-$v_img=array(
+$v_img=array(/* v0.0.1 */
     "none",
     "none"
 );
 /*
 	your videos' introductions
 */
-$v_intro=array(
+$v_intro=array(/* v0.0.1 */
     "元首的愤怒 气死偶嘞",
     "歌唱动荡的青春 红场千人大合唱版本 哈利洛夫指挥"
 );
@@ -48,14 +48,14 @@ $v_intro=array(
 	your videos' links
 	If you do not want to load the video by this way, please input 'disabled'
 */
-$v_videolink=array(
+$v_videolink=array(/* v0.0.1 */
     "disabled",
     "disabled"
 );
 /*
 	If you want to load the video by bilibili.com, you can input something('aid=xxx&bid=xxx&cid=xxx) of your video
 */
-$v_bilibili=array(
+$v_bilibili=array(/* v0.0.1 */
     "aid=22905&bvid=BV1Hx411c7iM&cid=37878",
     "aid=37278610&bvid=BV1tt411D7NA&cid=65516888"
 );

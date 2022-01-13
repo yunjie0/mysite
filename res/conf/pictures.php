@@ -22,10 +22,13 @@
 <?php
 
 // ------------------------------------------------------------
-define("_PICTURES_NUM_", "");	// total pictures (background)
+/* total pictures (background)*//* v0.0.1 */
+define("_PICTURES_NUM_", "");	
 // ------------------------------------------------------------
-
-define("_BG_COLOR_", _MAIN_COLOR_);	// background color in light mode (_MAIN_COLOR_ default)
-define("_BG_COLOR_DARK_", _MAIN_COLOR_DARK_);	// background color in dark mode (_MAIN_COLOR_DARK_ default)
-define("_BG_GROUP_", "");	// background pictures' group
+/* background color in light mode (_MAIN_COLOR_ default) *//* v0.0.1 */
+define("_BG_COLOR_", _MAIN_COLOR_);
+/* background color in dark mode (_MAIN_COLOR_DARK_ default) *//* v0.0.1 */
+define("_BG_COLOR_DARK_", _MAIN_COLOR_DARK_);
+/* background pictures' group *//* v0.0.1 */
+define("_BG_GROUP_", "");
 ?>

@@ -27,21 +27,14 @@
 				if ($_ENABLE_DARK_MODE_ == true) echo '#dddddd';
 				else echo '#000000';?>;"><?php echo _MASTER_NAME_;?></b>
     </a>
-    <a href="<?php echo _HTML_BASE_;?>/home" target="_parent" rel="noopener">
-        <div class=<?php echo $styl_header_card;?>>
-            <p style="font-size:20px;">小屋</p>
-        </div>
-    </a>
-    <a href="<?php echo _BLOG_;?>" target="_parent" rel="noopener">
-        <div class=<?php echo $styl_header_card;?>>
-            <p style="font-size:20px;">博客</p>
-        </div>
-    </a>
-    <a href="<?php echo _HTML_BASE_;?>/goto/" target="_parent" rel="noopener">
-        <div class=<?php echo $styl_header_card;?>>
-            <p style="font-size:20px;">去往</p>
-        </div>
-    </a>
+<?php
+	for ($i=0; $local_pages[$i] != "___END"; $i++) {
+		echo '<a href='._HTML_BASE_.$local_pages[$i].' target="_self" rel="noopener"><div class='.$styl_header_card.'><p style="font-size:20px;">'.$local_pages_title[$i].'</p></div></a>';
+	}
+	for ($i=0; $other_pages[$i] != "___END"; $i++) {
+		echo '<a href='._HTML_BASE_.$other_pages[$i].' target="_self" rel="noopener"><div class='.$styl_header_card.'><p style="font-size:20px;">'.$other_pages_title[$i].'</p></div></a>';
+	}
+?>
 <?php
 if (_TRAVELLING_ENABLE_ == true){
 	echo '
@@ -51,5 +44,7 @@ if (_TRAVELLING_ENABLE_ == true){
         </div>
     </a>';
 }
+echo '</div>';
+include(_PAGE_APLAYER_);
+//include(_PAGE_SIDE_);
 ?>
-</div>

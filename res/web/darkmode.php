@@ -19,9 +19,24 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 ?>
-<?php	
-	/* enable dark mode or not */
-	$_ENABLE_DARK_MODE_ = false;
+<?php
+$styl_container='container';
+$styl_header='header';
+$styl_header_card='header_card';
+$styl_footer='footer';
+$styl_button_small='button_small';
+$styl_button_big='button_big';
+$styl_button_huge='button_huge';
+$styl_proj_block='proj_block';
+$styl_v_block='v_block';
+$styl_gt_button_l='gt_button_l';
+
+/* enable dark mode or not */
+$_ENABLE_DARK_MODE_ = false;
+start_darkmode();
+
+function start_darkmode(){
+	global $_ENABLE_DARK_MODE_;
 	$dark='';
 	if ($_ENABLE_DARK_MODE_ == true) {
 		$dark='_dark';
@@ -37,7 +52,17 @@
 	color: #0000ff ;
 }</style>';
 	}
-		
+	global $styl_container;
+	global $styl_header;
+	global $styl_header_card;
+	global $styl_footer;
+	global $styl_button_small;
+	global $styl_button_big;
+	global $styl_button_huge;
+	global $styl_proj_block;
+	global $styl_v_block;
+	global $styl_gt_button_l;
+
 	$styl_container='container'.$dark;
 	$styl_header='header'.$dark;
 	$styl_header_card='header_card'.$dark;
@@ -48,4 +73,12 @@
 	$styl_proj_block='proj_block'.$dark;
 	$styl_v_block='v_block'.$dark;
 	$styl_gt_button_l='gt_button_l'.$dark;
+}
+
+if (isset($_POST['stdark']) == 1)
+{
+	$_ENABLE_DARK_MODE_  = true;
+	start_darkmode();
+}
+
 ?>

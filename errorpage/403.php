@@ -20,7 +20,6 @@
 <!doctype html>
 <html>
 <head>
-<head>
 <?php
     include("../res/conf/const.php");
 	include(_INCLUDE_);

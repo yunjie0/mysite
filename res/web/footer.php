@@ -21,17 +21,14 @@
 ?>
 <center><div class=<?php echo $styl_footer;?>>
     <p>(C) 2021-2022 Joseph Z.</p>
-    <p>
-        <a href="https://github.com/jiaxu07" target="_blank" rel="noopener"><img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/connect/github.webp" height=20 width=20></a>
-        <a href="https://space.bilibili.com/581714357" target="_blank" rel="noopener"><img id="img_r" src="https://www.bilibili.com/favicon.ico" height=20 width=20></a>
-        <a href="https://gitee.com/jiaxu07" target="_blank" rel="noopener"><img id="img_r" src="https://gitee.com/favicon.ico" height=20 width=20></a>
-        <a href="https://www.zhihu.com/people/jia-xu-98-33" target="_blank" rel="noopener"><img id="img_r" src="https://zhihu.com/favicon.ico" height=20 width=20></a>
-        <a href="https://weibo.com/u/7220002683" target="_blank" rel="noopener"><img id="img_r" src="https://weibo.com/favicon.ico" height=20 width=20></a>
-        <a href="https://josephz.top/blog/?feed=rss2" target="_blank" rel="noopener"><img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/connect/rss.jpg" height=20 width=20></a>
-        <a href="https://twitter.com/zhangjiaxu9" target="_blank" rel="noopener"><img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/connect/twitter.jpeg" height=20 width=20></a>
-        <a href="https://youtube.com/channel/UCumApDbQhKNMJ5MaNCIO5Ng" target="_blank" rel="noopener"><img id="img_r" src="<?php echo _HTML_BASE_;?>/res/icon/connect/youtube.jpeg" height=20 width=20></a>
-    </p>
+    <p><?php
+    for ($i=0; $links[$i] != '___END'; $i++) {
+		if ($links[$i] != 'no')
+			echo '<a href='.$links[$i].' target="_blank" rel="noopener"><img id="img_r" src='.$link_logos[$i].' height=20 width=20></a>';
+	}
+	echo '</p>
     <p><a href="<?php echo _HTML_BASE_;?>/" target="_blank">主页</a> | <a href="<?php echo _HTML_BASE_;?>/home/" target="_blank">小屋</a> | <a href="<?php echo _BLOG_;?>" target="_blank">博客</a></p>
     <p><a href="<?php echo _HTML_BASE_;?>/goto.html" target="_blank">去往</a></p>
-    <p>本站已勉强存活了<script language = "JavaScript"type = "text/javascript" >var urodz = new Date("04/31/2021");var now = new Date();var ile = now.getTime() - urodz.getTime();var dni = Math.floor(ile / (1000 * 60 * 60 * 24));document.write( + dni)</script>天</p>
+    <p>本站已勉强存活了<script language = "JavaScript"type = "text/javascript" >var urodz = new Date("'._SITE_BIRTHDAY_.'");var now = new Date();var ile = now.getTime() - urodz.getTime();var dni = Math.floor(ile / (1000 * 60 * 60 * 24));document.write( + dni)</script>天</p>';
+	?>
 </div></center>
