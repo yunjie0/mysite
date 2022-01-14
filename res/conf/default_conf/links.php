@@ -20,43 +20,23 @@
 */
 ?>
 <?php
-/*
-	titles
-*/
-$v_title=array(/* v0.0.1 */
-    "元首的愤怒",
-    "歌唱动荡的青春 红场千人大合唱版本"
-,"___END");
-/*
-	covers:
-	- 'none': no cover
-	- 'default': /res/img/videos/xxx(video number).jpg
-	- address
-*/
-$v_img=array(/* v0.0.1 */
-    "none",
-    "none"
-);
-/*
-	your videos' introductions
-*/
-$v_intro=array(/* v0.0.1 */
-    "元首的愤怒 气死偶嘞",
-    "歌唱动荡的青春 红场千人大合唱版本 哈利洛夫指挥"
-);
-/*
-	your videos' links
-	If you do not want to load the video by this way, please input 'disabled'
-*/
-$v_videolink=array(/* v0.0.1 */
-    "disabled",
-    "disabled"
-);
-/*
-	If you want to load the video by bilibili.com, you can input something('aid=xxx&bid=xxx&cid=xxx) of your video
-*/
-$v_bilibili=array(/* v0.0.1 */
-    "aid=22905&bvid=BV1Hx411c7iM&cid=37878",
-    "aid=37278610&bvid=BV1tt411D7NA&cid=65516888"
+$links=array(/* v0.0.2 */
+'no',		// 1. github
+'no',		// 2. gitee
+'no',		// 3. bilibili
+'no',		// 4. zhihu
+'no',		// 5. rss
+'no',		// 6. twitter
+'no',		// 7. youtube
+'___END');
+
+$link_logos=array(/* v0.0.2 */
+_HTML_BASE_.'/res/icon/connect/github.webp',
+'https://gitee.com/favicon.ico',
+'https://www.bilibili.com/favicon.ico',
+'https://zhihu.com/favicon.ico',
+_HTML_BASE_.'/res/icon/connect/rss.jpg',
+_HTML_BASE_.'/res/icon/connect/twitter.jpeg',
+_HTML_BASE_.'/res/icon/connect/youtube.jpeg'
 );
 ?>

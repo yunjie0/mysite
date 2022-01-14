@@ -21,7 +21,7 @@
 ?>
 <?php
 /* names of your projects */
-$pj_name=array(
+$pj_name=array(/* v0.0.1 */
     "project"
 ,"___END");
 /*
@@ -29,19 +29,19 @@ $pj_name=array(
 	- address
 	- 'disabled': do not want to put your site
 */
-$pj_link=array(
+$pj_link=array(/* v0.0.1 */
     "disabled"
 );
 /*
 	Covers
 */
-$pj_img=array(
+$pj_img=array(/* v0.0.1 */
     "xxx"
 );
 /*
 	introductions
 */
-$pj_intro=array(
+$pj_intro=array(/* v0.0.1 */
     "introduction"
 );
 /*
@@ -49,7 +49,7 @@ $pj_intro=array(
 	if open, input the lisense's name
 	if not, input 'disabled'
 */
-$pj_opensrc=array(
+$pj_opensrc=array(/* v0.0.1 */
     "BSD-3 Clause"
 );
 /* enable github or not */
@@ -57,7 +57,7 @@ $pj_opensrc=array(
 	if enable, input the repo's address
 	if not, input 'disabled'
 */
-$pj_github=array(
+$pj_github=array(/* v0.0.1 */
     "https://github.com/xxx/xxx"
 );
 /* enable gitee or not */
@@ -65,7 +65,7 @@ $pj_github=array(
 	if enable, input the repo's address
 	if not, input 'disabled'
 */
-$pj_gitee=array(
+$pj_gitee=array(/* v0.0.1 */
     "https://gitee.com/xxx/xxx"
 );
 /* enable download or not */
@@ -73,7 +73,7 @@ $pj_gitee=array(
 	if enable, input the downloading address
 	if not, input 'disabled'
 */
-$pj_download=array(
+$pj_download=array(/* v0.0.1 */
     "disabled"
 );
 ?>

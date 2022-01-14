@@ -25,13 +25,16 @@
 Config File
 *****/
 
-include($_BASE_."/res/conf/pictures.php");
-include($_BASE_."/res/conf/head.php");
-include($_BASE_."/res/conf/videos.php");
-include($_BASE_."/res/conf/goto.php");
-include($_BASE_."/res/conf/projects.php");
-include($_BASE_."/res/web/version.php");
-include(_DARKMODE_);
-include(_PAGE_BG_);
+include($_BASE_."/res/conf/pictures.php");			/* v0.0.1 */
+include($_BASE_."/res/conf/head.php");				/* v0.0.1 */
+include($_BASE_."/res/conf/videos.php");			/* v0.0.1 */
+include($_BASE_."/res/conf/goto.php");				/* v0.0.1 */
+include($_BASE_."/res/conf/projects.php");			/* v0.0.1 */
+include($_BASE_."/res/conf/links.php");				/* v0.0.2 */
+include($_BASE_."/res/conf/pages.php");				/* v0.0.2 */
+include($_BASE_."/res/conf/links.php");				/* v0.0.2 */
+include($_BASE_."/res/web/version.php");			/* v0.0.2 */
+include(_DARKMODE_);								/* v0.0.1 */
+include(_PAGE_BG_);									/* v0.0.1 */
 
 ?>

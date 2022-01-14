@@ -20,16 +20,16 @@
 */
 ?>
 <?php
-$goto_title=array(
+$goto_title=array(/* v0.0.1 */
         "世界上第一个网站",
         "WCC实验室官网"
 ,"___END");
-$goto_link=array(
+$goto_link=array(/* v0.0.1 */
         "http://info.cern.ch",
         "https://wcc.group"
 );
 /* Introductions */
-$goto_intro=array(
+$goto_intro=array(/* v0.0.1 */
         "info.cern.ch",
         "wcc.group"
 );

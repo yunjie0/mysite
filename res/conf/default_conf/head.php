@@ -25,6 +25,8 @@
 Config File
 *****/
 
+/* v0.0.2 */
+
 ?>
 
 <meta charset="utf-8">
@@ -33,5 +35,8 @@ Config File
 <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/img.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/style.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/style_dark.css" type="text/css"/>
+<link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/side.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/footer.css" type="text/css"/>
+<link rel="stylesheet" href="<?php echo _HTML_BASE_;?>/res/css/APlayer.min.css" type="text/css"/>
 <script src="<?php echo _HTML_BASE_;?>/res/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="<?php echo _HTML_BASE_;?>/res/js/APlayer.min.js" type="text/javascript"></script>

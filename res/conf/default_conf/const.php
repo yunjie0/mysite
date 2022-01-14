@@ -25,56 +25,65 @@
 Config File
 *****/
 
-/* the location of your website in your server (php) */
-$_BASE_ = '';
+/* the location of your website in your server (php) *//* v0.0.1 */
+$_BASE_ = 'C:/hexo/joseph/mysite';
 
-/* the location of your website in your server (html) */
-define("_HTML_BASE_", "");
+/* the location of your website in your server (html) *//* v0.0.1 */
+define("_HTML_BASE_", "/t/mysite");
 
-/* the name of your website*/
+/* the name of your website*//* v0.0.1 */
 define("_SITE_NAME_", "mysite");
 
-/* your name */
+/* your name *//* v0.0.1 */
 define("_MASTER_NAME_", "MySite");
 define("_SITE_NAME_H2_", "mysite");
 
-/* the name of your home */
-define("_HOME_NAME_", "My Home");
+/* the name of your home *//* v0.0.1 */
+define("_HOME_NAME_", "小屋");
 
-/* your avatar */
+/* your avatar *//* v0.0.1 */
 define("_AVATAR_", _HTML_BASE_."/res/avatar.png");
 
-/* your blog */
+/* your blog *//* v0.0.1 */
 define("_BLOG_", "");
 
-/* your document site */
+/* your document site *//* v0.0.1 */
 define("_DOCS_", "");
 
-/* your site which is used to play or relax */
+/* your site which is used to play or relax *//* v0.0.1 */
 define("_RELAX_", "");
 
-/* support background or not (true or false) */
+/* support background or not (true or false) *//* v0.0.1 */
 define("_SUPPORT_BG_", false);
 
-/* main color */
+/* main color *//* v0.0.1 */
 define("_MAIN_COLOR_", "#95afff");			// light
 define("_MAIN_COLOR_DARK_", "#051f7f");		// dark
 
+/* your site's birthday *//* v0.0.2 */
+define("_SITE_BIRTHDAY_", "07/31/2021");
+
+/* enable aplayer *//* v0.0.2 */
+define("_ENABLE_APLAYER_", true);
 
 // ------------------------------------------------------------
 
-/* Files and functions. Do not change unless you know what you will do! */
-define("_INCLUDE_", $_BASE_."/res/conf/include.php");
-define("_PAGE_HEADER_", $_BASE_."/res/web/header.php");
-define("_PAGE_FOOTER_", $_BASE_."/res/web/footer.php");
-define("_PAGE_BG_", $_BASE_."/res/web/bg.php");
-define("_DARKMODE_", $_BASE_."/res/web/darkmode.php");
-define("_COMMENT_xxx",  $_BASE_."/res/web/comment_none.php");
-define("_COMMENT_waline", $_BASE_."/res/web/waline.php");
+/* Files and functions. Do not change unless you know what you will do! *//* v0.0.2 */
+define("_RES_", $_BASE_."/res");
+define("_HTML_RES_", _HTML_BASE_."/res");
+define("_INCLUDE_", _RES_."/conf/include.php");
+define("_PAGE_HEADER_", _RES_."/web/header.php");
+define("_PAGE_FOOTER_", _RES_."/web/footer.php");
+define("_PAGE_BG_", _RES_."/web/bg.php");
+define("_PAGE_APLAYER_", _RES_."/web/aplayer.php");
+define("_DARKMODE_", _RES_."/web/darkmode.php");
+define("_COMMENT_xxx", _RES_."/web/comment_none.php");
+define("_PAGE_SIDE_", _RES_."/web/side.php");
+define("_COMMENT_waline", _RES_."/web/waline.php");
 
 // ------------------------------------------------------------
 
-/* your comment system */
+/* your comment system *//* v0.0.1 */
 /* 
    supported:
    waline
@@ -83,6 +92,7 @@ define("_COMMENT_waline", $_BASE_."/res/web/waline.php");
  */
 define("_COMMENT_", _COMMENT_xxx);
 
+/* enable travelling or not *//* v0.0.2 */
 define("_TRAVELLING_ENABLE_", true);
 
 ?>
