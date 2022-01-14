@@ -31,7 +31,7 @@
         <center>
 			<img src="<?php echo _HTML_BASE_;?>/res/img/errorpage/403.png"/>
         </center>
-            <br><a href="<?php echo _HTML_BASE_;?>" target="_self" rel="noopener">
+            <br><a href="<?php echo _HTML_BASE_;?>/" target="_self" rel="noopener">
                 <div class=<?php echo $styl_button_small;?>>
                     <b style="font-size:15px;">主页</b><br>Index
                 </div>

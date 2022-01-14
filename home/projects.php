@@ -47,7 +47,7 @@
         {
             echo '<a href='.$pj_link[$i].' target="_blank" rel="noopener">';
         }
-        echo '<div class='.$styl_proj_block.'><img src="'.$v_img[$i].'" width=300px height=240px><span><b style="font-size:15px;">'.$pj_name[$i].'</b><br>'.$pj_intro[$i].'<br>';
+        echo '<div class='.$styl_proj_block.'><img src="'.$pj_img[$i].'" width=300px height=240px><span><b style="font-size:15px;">'.$pj_name[$i].'</b><br>'.$pj_intro[$i].'<br>';
         
         if ($pj_opensrc[$i] == "disabled")
         {
