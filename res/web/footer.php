@@ -28,7 +28,7 @@
 	}
 	echo '</p>
     <p><a href='._HTML_BASE_.'/ target="_blank">主页</a> | <a href='._HTML_BASE_.'/home/ target="_blank">小屋</a> | <a href='._BLOG_.' target="_blank">博客</a></p>
-    <p><a href="'._HTML_BASE_.'/goto.html" target="_blank">去往</a></p>
+    <p><a href="'._HTML_BASE_.'/goto/" target="_blank">去往</a></p>
     <p>本站已勉强存活了<script language = "JavaScript"type = "text/javascript" >var urodz = new Date("'._SITE_BIRTHDAY_.'");var now = new Date();var ile = now.getTime() - urodz.getTime();var dni = Math.floor(ile / (1000 * 60 * 60 * 24));document.write( + dni)</script>天</p>';
 	?>
 </div></center>

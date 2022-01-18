@@ -32,7 +32,7 @@
 		echo '<a href='._HTML_BASE_.$local_pages[$i].' target="_self" rel="noopener"><div class='.$styl_header_card.'><p style="font-size:20px;">'.$local_pages_title[$i].'</p></div></a>';
 	}
 	for ($i=0; $other_pages[$i] != "___END"; $i++) {
-		echo '<a href='._HTML_BASE_.$other_pages[$i].' target="_self" rel="noopener"><div class='.$styl_header_card.'><p style="font-size:20px;">'.$other_pages_title[$i].'</p></div></a>';
+		echo '<a href='.$other_pages[$i].' target="_self" rel="noopener"><div class='.$styl_header_card.'><p style="font-size:20px;">'.$other_pages_title[$i].'</p></div></a>';
 	}
 ?>
 <?php

@@ -1,41 +1,4 @@
 <?php
-/***
-    The Source Code of JOSEPHZ.TOP
-    (C) 2021-2022 Joseph Z.
-    All rights reserved.
-    license: BSD 3-Clause 
-***/
+define("default_cover",""._RES_."/img/aplayer/default.png");
 
-/*
-    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-    SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-    CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
 ?>
-
-<?php
-define("default_cover", _HTML_BASE_.'/res/img/aplayer/default.png');
-?>
-
-<script>
-/* https://aplayer.js.org/ *//* v0.0.2 */
-const ap = new APlayer({
-    container: document.getElementById('aplayer'),
-    fixed: true,
-    audio: [
-		{
-			name: '天空之城',
-			artist: 'V.A.',
-			url: '<?php echo _HTML_BASE_;?>/res/file/aplayer/V.A. - 天空之城.mp3',
-			cover: '<?php echo default_cover;?>'
-		}
-	]
-});
-</script>

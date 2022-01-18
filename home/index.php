@@ -42,7 +42,7 @@
 		echo '<a href="'._HTML_BASE_.'/home/'.$home_pages_local[$i].'.php" target="_self" rel="noopener"><div class='.$styl_button_big.'><b style="font-size:15px;">'.$home_pages_local_title[$i].'</b><br>'.$home_pages_local_intro[$i].'</div></a>';
 	}
 	for ($i=0; $home_pages_other[$i] != "___END"; $i++) {
-		echo '<a href='._HTML_BASE_.'/home/'.$home_pages_other[$i].' target="_self" rel="noopener"><div class='.$styl_button_big.'><b style="font-size:15px;">'.$home_pages_other_title[$i].'</b><br>'.$home_pages_other_intro[$i].'</div></a>';
+		echo '<a href='.$home_pages_other[$i].' target="_self" rel="noopener"><div class='.$styl_button_big.'><b style="font-size:15px;">'.$home_pages_other_title[$i].'</b><br>'.$home_pages_other_intro[$i].'</div></a>';
 	}
 ?>
             </div>

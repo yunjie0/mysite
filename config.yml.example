@@ -1,20 +1,3 @@
-# MySite
-MySite ver.0.0.1
-
-# 安装
-
-1. 将文件解压到服务器相应目录
-2. /config.yml.example 改成 /config.yml，并按照您的需求修改
-3. 运行 python ./configure.py
-
-# 更新
-
-1. 新版本覆盖旧版本（保留配置文件和你原来的数据）
-2. 修改配置文件，将您的配置文件适配新版本。
-3. 运行 python ./configure.py
-
-## 最新配置文件
-```
 php_base: ''
 html_base: ''
 site_name: ''
@@ -206,11 +189,3 @@ files_const:
   comment:
     xxx: _RES_.'/web/comment_none.php'
     waline: _RES_.'/web/waline.php'
-```
-
-# 更新
-
-- 0.0.1: 第一个版本
-- 0.0.2: 修补了一些bug
-- 0.0.3：支持yaml配置文件 
- 
