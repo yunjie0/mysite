@@ -88,10 +88,10 @@ pictures_php_a = [
 	'background',	# 3
 ]
 pictures_php_b = [
-	'_PICTURES_NUM_',	# 0
-	'_BG_COLOR_',		# 1
-	'_BG_COLOR_DARK_',	# 2
-	'_BG_GROUP_'		# 3
+	'_BG_COLOR_',		# 0
+	'_BG_COLOR_DARK_',	# 1
+	'_BG_GROUP_',		# 2
+	'_PICTURES_NUM_'	# 3
 ]
 pictures_php_t = [0,0,0,1];
 pictures_bg_key = ['light_color','dark_color','pictures_group','number'];
