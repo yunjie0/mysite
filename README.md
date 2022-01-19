@@ -87,13 +87,13 @@ links:
     - 'no'
     - 'no'
   logos:
-    - '"._RES_."/icon/connect/github.webp'
+    - '"._HTML_RES_."/icon/connect/github.webp'
     - 'https://gitee.com/favicon.ico'
     - 'https://www.bilibili.com/favicon.ico'
     - 'https://zhihu.com/favicon.ico'
-    - '"._RES_."/icon/connect/rss.jpg'
-    - '"._RES_."/icon/connect/twitter.jpeg'
-    - '"._RES_."/icon/connect/youtube.jpeg'
+    - '"._HTML_RES_."/icon/connect/rss.jpg'
+    - '"._HTML_RES_."/icon/connect/twitter.jpeg'
+    - '"._HTML_RES_."/icon/connect/youtube.jpeg'
 
 goto:
   title:
