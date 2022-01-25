@@ -32,10 +32,10 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class=<?php echo $styl_container;?>>
+    <div class="container">
         <center><h1>时间</h1></center>
         <a href="./" target="_self" rel="noopener">
-            <div class=<?php echo $styl_button_small;?>>
+            <div class="button_small">
                 <b style="font-size:15px;">离开</b><br>back
             </div>
         </a>   

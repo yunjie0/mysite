@@ -33,11 +33,11 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class=<?php echo $styl_container;?>>
+    <div class="container">
     <center><h1>去往</h1><div>
 <?php
     for ($i=0; $goto_title[$i] != "___END"; $i++) {
-        echo '<a href='.$goto_link[$i].' target="_blank" rel="noopener"><div class='.$styl_gt_button_l.'><img src="https://image.thum.io/get/width/1280/crop/800/'.$goto_link[$i].'" width=160px height=120px><br><b style="font-size:15px;">'.$goto_title[$i].'</b><br>'.$goto_intro[$i].'</div></a>';
+        echo '<a href='.$goto_link[$i].' target="_blank" rel="noopener"><div class="gt_button_l"><img src="https://image.thum.io/get/width/1280/crop/800/'.$goto_link[$i].'" width=160px height=120px><br><b style="font-size:15px;">'.$goto_title[$i].'</b><br>'.$goto_intro[$i].'</div></a>';
     }
 ?>
     </div></center>

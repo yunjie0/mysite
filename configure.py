@@ -10,7 +10,7 @@ const_php_a = [
 	'html_base', 		# 1
 	'site_name', 		# 2
 	'master_name', 		# 3
-	'site_name_h2',		# 4
+	'intro',		# 4
 	'home_name',		# 5
 	'blog',				# 7
 	'docs_site',		# 8
@@ -23,7 +23,6 @@ const_php_a = [
 	'files_const',		# 15
 	'files_const',		# 16
 	'files_const',		# 17
-	'files_const',		# 18
 	'files_const',		# 19
 	'files_const',		# 20
 	'files_const',		# 21
@@ -53,7 +52,6 @@ const_php_b = [
 	'_RES_',				# 15
 	'_HTML_RES_',			# 16
 	'_INCLUDE_',			# 17
-	'_DARKMODE_',			# 18
 	'_PAGE_HEADER_',		# 19
 	'_PAGE_FOOTER_',		# 20
 	'_PAGE_BG_',			# 21
@@ -70,13 +68,13 @@ const_php_t = [
 			0,0,0,0,
 			1,0,0,0,1,
 			3,3,3,3,3,
-			3,3,3,3,3,
+			3,3,3,3,
 			3,3,1,0
 			]
 const_bg_key = ['enable_image']
 const_main_color_key = ['light','dark']
 const_aplayer_key = ['enable']
-const_files_const_key = ['php_res_dir','html_res_dir','include_dir','darkmode','pages','pages','pages','pages','pages','comment','comment']
+const_files_const_key = ['php_res_dir','html_res_dir','include_dir','pages','pages','pages','pages','pages','comment','comment']
 const_files_const_pages_key = ['header','footer','bg','aplayer','side']
 const_files_const_comment_key = ['xxx','waline']
 
@@ -134,10 +132,10 @@ def make_php_file():
 	make_2(f,const_php_a[10],const_php_b,const_php_t,const_main_color_key,10,12,1)
 	make_1(f,const_php_a,const_php_b,const_php_t,12,13,0)
 	make_2(f,const_php_a[13],const_php_b,const_php_t,const_aplayer_key,13,14,1)
-	make_2(f,const_php_a[14],const_php_b,const_php_t,const_files_const_key,14,18,1)
-	make_3(f,const_php_a[18],const_php_b,const_php_t,const_files_const_key,5,const_files_const_pages_key,18,23,1)
-	make_3(f,const_php_a[23],const_php_b,const_php_t,const_files_const_key,10,const_files_const_comment_key,23,25,1)
-	make_1(f,const_php_a,const_php_b,const_php_t,25,28,0)
+	make_2(f,const_php_a[14],const_php_b,const_php_t,const_files_const_key,14,17,1)
+	make_3(f,const_php_a[17],const_php_b,const_php_t,const_files_const_key,4,const_files_const_pages_key,17,22,1)
+	make_3(f,const_php_a[22],const_php_b,const_php_t,const_files_const_key,8,const_files_const_comment_key,22,24,1)
+	make_1(f,const_php_a,const_php_b,const_php_t,24,27,0)
 	f.write('\n?>')
 	f.close()
 

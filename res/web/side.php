@@ -20,23 +20,62 @@
 */
 ?>
 <script>
+var mode;
+
+var date = new Date();  
+var h = date.getHours();          // 获取小时
+if (h <= 6 || h >= 18) {
+//	console.log('It is night now!');
+	mode == true;
+	enable_darkmode();
+}
+
+function enable_darkmode() {
+	var styles = getComputedStyle(document.documentElement);
+
+	if (mode == false) {		// light
+		document.documentElement.style.setProperty("--bg-color","<?php echo _BG_COLOR_;?>");
+		document.documentElement.style.setProperty("--theme-color","rgba( 200, 210, 240, 0.75 )");
+		document.documentElement.style.setProperty("--theme-color-hover","rgba( 255, 255, 255, 0.85 )");
+		document.documentElement.style.setProperty("--theme-card-hover","#dbdbdb");
+		document.documentElement.style.setProperty("--theme-card-a","5px 5px 10px #c9c9c9, -5px -5px 10px #ededed");
+		document.documentElement.style.setProperty("--theme-card-s","inset 5px 5px 10px #c9c9c9,inset -5px -5px 10px #ededed");
+		document.documentElement.style.setProperty("--theme-card-b","rgba( 255, 255, 255, 0.18 )");
+		document.documentElement.style.setProperty("--font-color","#000000");
+		document.documentElement.style.setProperty("--filter","100%");
+	}
+	else {					// dark
+		document.documentElement.style.setProperty("--bg-color","<?php echo _BG_COLOR_DARK_?>");
+		document.documentElement.style.setProperty("--theme-color","rgba( 20, 20, 20, 0.75 )");
+		document.documentElement.style.setProperty("--theme-color-hover","#000000");
+		document.documentElement.style.setProperty("--theme-card-hover","#222222");
+		document.documentElement.style.setProperty("--theme-card-a","5px 5px 10px #3b3b3b,-5px -5px 10px #4f4f4f");
+		document.documentElement.style.setProperty("--theme-card-s"," inset 5px 5px 10px #3b3b3b, inset -5px -5px 10px #4f4f4f");
+		document.documentElement.style.setProperty("--theme-card-b","rgba( 0, 0, 0, 0.18 )");
+		document.documentElement.style.setProperty("--font-color","#aaaaaa");
+		document.documentElement.style.setProperty("--filter","50%");
+		
+	}
+//	console.log('enable dark mode:',mode);
+}
+
 function d_click() {
-	console.log('123');
-    $.ajax({
-        url: "<?php echo _HTML_BASE_?>/res/web/darkmode.php",
-        method: "post",
-		data: {
-			stdark: 1
-		},
-        success: function(result){
-			alert(result);
-		}
-    });
+	if (mode == false)	mode = true;
+	else 				mode = false;
+	enable_darkmode();
+};
+
+function up_click() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 };
 </script>
 <div class="side_buttons">
-	<button class="side_button_0" onclick="d_click()" name="stdark" type="submit" title="D"></div>
+	<div class="side_button_0" onclick="d_click()">
+		<img src="<?php echo _HTML_RES_?>/icon/side/darkmode.png">
+	</div>
+	<div class="side_button_0" onclick="up_click()">
+		<img src="<?php echo _HTML_RES_?>/icon/side/up.png">
+	</div>
 </div>
-
-
-

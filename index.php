@@ -32,11 +32,11 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class=<?php echo $styl_container;?>>
+    <div class="container">
         <center>
             <img style="border-radius:183px;zoom:40%;margin-top:25px;" src=<?php echo _AVATAR_;?> />
             <b style="font-size:200%;"><?php echo _SITE_NAME_;?></b>
-            <h3><?php echo _SITE_NAME_H2_;?></h3>
+            <p style="font-size:20px;"><?php echo _SITE_NAME_H2_;?></p>
             
 <?php
 	for ($i=0; $local_pages[$i] != "___END"; $i++) {

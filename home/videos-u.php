@@ -34,7 +34,7 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class=<?php echo $styl_container;?>>
+    <div class="container">
     <center><h1>视频</h1>
 <?php
     echo '<h2>'.$v_title[$id].'</h2>';
@@ -58,7 +58,7 @@
 ?>
     </center>
     <a href="<?php echo _HTML_BASE_?>/home/videos.php" target="_self" rel="noopener">
-        <div class=<?php echo $styl_button_small;?>>
+        <div class="button_small">
             <b style="font-size:15px;">离开</b><br>back
         </div>
     </a>

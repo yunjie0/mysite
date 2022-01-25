@@ -32,15 +32,15 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class=<?php echo $styl_container;?>>
+    <div class="container">
         <center><h1>搜索</h1></center>
         <a href="./" target="_self" rel="noopener">
-            <div class=<?php echo $styl_button_small;?>>
+            <div class="button_small">
                 <b style="font-size:15px;">离开</b><br>back
             </div>
         </a>
         <a href="https://www.baidu.com" target="_blank" rel="noopener">
-            <div class=<?php echo $styl_button_small;?>>
+            <div class="button_small">
                 <b style="font-size:15px;">百度搜索</b><br>Baidu
             </div>
         </a>

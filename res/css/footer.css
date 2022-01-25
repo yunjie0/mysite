@@ -21,32 +21,16 @@
     text-align:center;
     margin: 1% auto 0;
     width: 80%;
-    background: rgba( 200, 210, 240, 0.75 );
+    background: var(--theme-color);
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid var(--theme-card-b);
     transition: 0.25s;
+	color: var(--font-color);
 	padding: 1% 2%;
 }
 .footer:hover{
-    background: rgba( 255, 255, 255, 0.85 );
+    background: var(--theme-color-hover);
 }
 
-
-.footer_dark {
-    text-align:center;
-    width: 80%;
-    margin: 1% auto 0;
-    background: rgba( 0, 10, 40, 0.75 );
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
-    border-radius: 10px;
-    border: 1px solid rgba( 0, 0, 0, 0.18 );
-    transition: 0.25s;
-	color: #dddddd;
-	padding: 1% 2%;
-}
-.footer_dark:hover{
-    background: rgba( 0, 0, 0, 0.85 );
-}

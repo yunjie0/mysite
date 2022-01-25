@@ -19,9 +19,8 @@
 
 .side_buttons {
 	width: 24px;
-	height: 24px;
-	background-color: #ccddee;
-    border-radius: 10px;
+	background: var(--theme-color);
+	border-radius: 10px;
 	bottom: 80px;
 	right: 10px;
 	position: fixed;
@@ -29,8 +28,15 @@
 }
 
 .side_button_0 {
+	margin: 1px 0;
 	width: 24px;
 	height: 24px;
-	background-color: #deefff;
-    border-radius: 6px;
+	color: var(--font-color);
+	background: var(--theme-card-hover);
+/*	box-shadow: var(--theme-card-a);*/
+	border-radius: 6px;
+}
+
+.side_button_0:hover{
+	box-shadow: var(--theme-card-s);
 }

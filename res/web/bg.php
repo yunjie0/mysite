@@ -20,20 +20,37 @@
 */
 ?>
 <?php
-echo '<style>body{
-	background-color: ';
-if ($_ENABLE_DARK_MODE_) echo _BG_COLOR_DARK_;
-else echo _BG_COLOR_;
+echo '
+<style>:root{
+   --bg-color: '._BG_COLOR_.';
+   --theme-color: rgba( 200, 210, 240, 0.75 );
+   --theme-color-hover: rgba( 255, 255, 255, 0.85 );
+   --theme-card-hover: #dbdbdb;
+   --theme-card-a: 5px 5px 10px #c9c9c9, -5px -5px 10px #ededed;
+   --theme-card-s: inset 5px 5px 10px #c9c9c9, inset -5px -5px 10px #ededed;
+   --theme-card-b: rgba( 255, 255, 255, 0.18 );
+   --font-color: #000000;
+   --filter: 100%;
+}
+img {
+	-webkit-filter: brightness(var(--filter));
+	filter: brightness(var(--filter));
+}
+body {
+	background-color: var(--bg-color);
+';
 	
-echo ';';
 if (_SUPPORT_BG_) {
-	echo '	background:url('._HTML_BASE_.'/res/img/pictures/'._BG_GROUP_.'/'.rand(0,_PICTURES_NUM_).'.jpg);
+	echo '
+	background:url('._HTML_BASE_.'/res/img/pictures/'._BG_GROUP_.'/'.rand(0,_PICTURES_NUM_).'.jpg);
 	background-attachment:fixed;
 	background-position: center top;
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment:fixed;';
+	background-attachment:fixed;
+';
 }
-echo '}</style>';
+echo '};
+</style>';
 ?>

@@ -1,10 +1,12 @@
-<!--
+<?php
+/***
     The Source Code of JOSEPHZ.TOP
-    (C) 2021 Joseph Z.
+    (C) 2021-2022 Joseph Z.
     All rights reserved.
     license: BSD 3-Clause 
--->
-<!--
+***/
+
+/*
     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
     AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
     IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -15,7 +17,8 @@
     CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
     OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
+*/
+?>
 
 <!doctype html>
 <html>
@@ -27,12 +30,15 @@
 ?>
 </head> 
 <body>
-    <div class=<?php echo $styl_container;?>>
+<?php
+	include(_PAGE_SIDE_);
+?>
+    <div class="container">
         <center>
 			<img src="<?php echo _HTML_BASE_;?>/res/img/errorpage/404.png"/>
         </center>
             <br><a href="<?php echo _HTML_BASE_;?>/" target="_self" rel="noopener">
-                <div class=<?php echo $styl_button_small;?>>
+                <div class="button_small">
                     <b style="font-size:15px;">主页</b><br>Index
                 </div>
             </a>

@@ -5,9 +5,12 @@ $local_pages_img=array(""._HTML_RES_."/icon/site/home.png",
 ""._HTML_RES_."/icon/site/goto.png");
 $local_pages_title=array("小屋",
 "去往");
-$other_pages=array("https://blog.josephz.top","___END");
-$other_pages_img=array(""._HTML_RES_."/icon/site/blog.png");
-$other_pages_title=array("博客");
+$other_pages=array("https://blog.josephz.top",
+"https://pan.josephz.top","___END");
+$other_pages_img=array(""._HTML_RES_."/icon/site/blog.png",
+""._HTML_RES_."/icon/site/pan.png");
+$other_pages_title=array("博客",
+"云盘");
 $home_pages_local=array("search",
 "time",
 "projects",

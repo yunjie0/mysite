@@ -33,10 +33,10 @@
 <?php
     include(_PAGE_HEADER_);
 ?>
-    <div class=<?php echo $styl_container;?>>
+    <div class="container">
         <center><h1>项目</h1></center>
         <a href="./" target="_self" rel="noopener">
-            <div class=<?php echo $styl_button_small;?>>
+            <div class="button_small">
                 <b style="font-size:15px;">离开</b><br>back
             </div>
         </a>
@@ -47,7 +47,7 @@
         {
             echo '<a href='.$pj_link[$i].' target="_blank" rel="noopener">';
         }
-        echo '<div class='.$styl_proj_block.'><img src="'.$pj_img[$i].'" width=300px height=240px><span><b style="font-size:15px;">'.$pj_name[$i].'</b><br>'.$pj_intro[$i].'<br>';
+        echo '<div class="proj_block"><img src="'.$pj_img[$i].'" width=300px height=240px><span><b style="font-size:15px;">'.$pj_name[$i].'</b><br>'.$pj_intro[$i].'<br>';
         
         if ($pj_opensrc[$i] == "disabled")
         {

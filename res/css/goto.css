@@ -18,38 +18,17 @@
 */
 
 .gt_button_l{
-    margin:5px 0;
-    color: #222222;
+    margin:5px 8px;
+    color: var(--font-color);
     text-align: center;
     border-radius: 12px;
-    background: #dbdbdb;
-    box-shadow:  5px 5px 10px #c9c9c9,
-                 -5px -5px 10px #ededed;
+    background: var(--theme-card-hover);
+    box-shadow: var(--theme-card-a);
     width: 40%;
     display:inline-block;
 }
 
 .gt_button_l:hover{
     border-radius: 12px;
-    background: #dbdbdb;
-    box-shadow: inset 5px 5px 10px #c9c9c9,
-                inset -5px -5px 10px #ededed;
-}
-
-
-.gt_button_l_dark {
-    margin:5px 0;
-    text-align: center;
-    border-radius: 12px;
-    background: #5b5b5b;
-    color: #dddddd;
-    box-shadow:  5px 5px 10px #494949,
-                 -5px -5px 10px #6d6d6d;
-    width: 40%;
-    display:inline-block;
-}
-
-.gt_button_l_dark:hover {
-    box-shadow: inset 5px 5px 10px #494949,
-                inset -5px -5px 10px #6d6d6d;
+    box-shadow: var(--theme-card-s);
 }
