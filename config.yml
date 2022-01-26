@@ -1,3 +1,6 @@
+# Theme
+theme: blueboard
+
 # base path in php (default value is ''),
 # TAG is $_BASE_
 php_base: 'C:/hexo/joseph/mysite'

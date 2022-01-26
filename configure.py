@@ -10,29 +10,30 @@ const_php_a = [
 	'html_base', 		# 1
 	'site_name', 		# 2
 	'master_name', 		# 3
-	'intro',		# 4
+	'intro',			# 4
 	'home_name',		# 5
-	'blog',				# 7
-	'docs_site',		# 8
-	'relax',			# 9
-	'background',		# 10
+	'blog',				# 6
+	'docs_site',		# 7
+	'relax',			# 8
+	'background',		# 9
+	'main_color',		# 10
 	'main_color',		# 11
-	'main_color',		# 12
-	'site_birthday',	# 13
-	'aplayer',			# 14
+	'site_birthday',	# 12
+	'aplayer',			# 13
+	'files_const',		# 14
 	'files_const',		# 15
 	'files_const',		# 16
 	'files_const',		# 17
+	'files_const',		# 18
 	'files_const',		# 19
 	'files_const',		# 20
 	'files_const',		# 21
 	'files_const',		# 22
 	'files_const',		# 23
-	'files_const',		# 24
-	'files_const',		# 25
-	'comment',			# 26
-	'enable_travelling',# 27
-	'avatar'			# 6
+	'comment',			# 24
+	'enable_travelling',# 25
+	'avatar',			# 26
+	'theme'				# 27
 ]
 const_php_b = [
 	'$_BASE_', 				# 0
@@ -41,36 +42,37 @@ const_php_b = [
 	'_MASTER_NAME_', 		# 3
 	'_SITE_NAME_H2_',		# 4
 	'_HOME_NAME_',			# 5
-	'_BLOG_',				# 7
-	'_DOCS_',				# 8
-	'_RELAX_',				# 9
-	'_SUPPORT_BG_',			# 10
-	'_MAIN_COLOR_',			# 11
-	'_MAIN_COLOR_DARK_',	# 12
-	'_SITE_BIRTHDAY_',		# 13
-	'_ENABLE_APLAYER_',		# 14
-	'_RES_',				# 15
-	'_HTML_RES_',			# 16
-	'_INCLUDE_',			# 17
-	'_PAGE_HEADER_',		# 19
-	'_PAGE_FOOTER_',		# 20
-	'_PAGE_BG_',			# 21
-	'_PAGE_APLAYER_',		# 22
-	'_PAGE_SIDE_',			# 23
-	'xxx',					# 24
-	'waline',				# 25
-	'_COMMENT_',			# 26
-	'_TRAVELLING_ENABLE_',	# 27
-	'_AVATAR_'				# 6
+	'_BLOG_',				# 6
+	'_DOCS_',				# 7
+	'_RELAX_',				# 8
+	'_SUPPORT_BG_',			# 9
+	'_MAIN_COLOR_',			# 10
+	'_MAIN_COLOR_DARK_',	# 11
+	'_SITE_BIRTHDAY_',		# 12
+	'_ENABLE_APLAYER_',		# 13
+	'_RES_',				# 14
+	'_HTML_RES_',			# 15
+	'_INCLUDE_',			# 16
+	'_PAGE_HEADER_',		# 17
+	'_PAGE_FOOTER_',		# 18
+	'_PAGE_BG_',			# 19
+	'_PAGE_APLAYER_',		# 20
+	'_PAGE_SIDE_',			# 21
+	'xxx',					# 22
+	'waline',				# 23
+	'_COMMENT_',			# 24
+	'_TRAVELLING_ENABLE_',	# 25
+	'_AVATAR_'				# 26
+	# no 27
 ]
 const_php_t = [
-			2,0,0,0,0,
-			0,0,0,0,
-			1,0,0,0,1,
-			3,3,3,3,3,
-			3,3,3,3,
-			3,3,1,0
-			]
+2,0,0,0,0,
+0,0,0,0,1,
+0,0,0,1,3,
+3,3,3,3,3,
+3,3,3,3,3,
+1,0  # no 27
+]
 const_bg_key = ['enable_image']
 const_main_color_key = ['light','dark']
 const_aplayer_key = ['enable']
@@ -192,6 +194,9 @@ def make_php_file():
 	make_2(f,'aplayer',aplayer_php_b,aplayer_php_t,aplayer_php_a,0,1,0)
 	f.write('\n?>')
 	f.close()
+	
+	t_path='units/theme-'+d['theme']
+	print(t_path)
 	
 def printmsg(str):
 	print('[MSG]',str)
