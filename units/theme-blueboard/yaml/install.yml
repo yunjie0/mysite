@@ -1,0 +1,7 @@
+# do not change unless you know what you will do
+head:
+  - <link rel="stylesheet" href="'._HTML_RES_.'/css/header.css" type="text/css"/>
+  - <link rel="stylesheet" href="'._HTML_RES_.'/css/img.css" type="text/css"/>
+  - <link rel="stylesheet" href="'._HTML_RES_.'/css/style.css" type="text/css"/>
+  - <link rel="stylesheet" href="'._HTML_RES_.'/css/side.css" type="text/css"/>
+  - <link rel="stylesheet" href="'._HTML_RES_.'/css/footer.css" type="text/css"/>

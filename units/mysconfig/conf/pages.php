@@ -1,0 +1,16 @@
+<?php
+$othersite=[
+0=>[
+"name"=>"blog",
+"link"=>"https://blog.josephz.top",
+],
+1=>[
+"name"=>"relax",
+"link"=>"https://mc.josephz.top",
+],
+2=>[
+"name"=>"docs",
+"link"=>"https://doc.josephz.top",
+],
+];
+?>

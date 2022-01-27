@@ -8,34 +8,28 @@ php_base: 'C:/hexo/joseph/mysite'
 html_base: '/t/mysite'
 
 # name of your site
-site_name: 'mysite'
+site_name: 'MYS'
 # your name
-master_name: 'MySite'
-# the introduction of you (v0.0.4)
-intro: 'mysite'
+master_name: 'MyS'
+# the introduction of you
+intro: 'This is mys.'
 # the name of home page
-home_name: 'myhome'
+home_name: 'mys home'
 
 # your avatar's link
 avatar: '".base."/avatar.png'
 
 othersite:
-  blog: 'https://blog.josephz.top'
-  docs: 'https://doc.josephz.top'
-  relax: 'https://mc.josephz.top'
-
-
-goto:
-  - name: '世界上第一个网站'
-    link: 'http://info.cern.ch'
-    intro: 'info.cern.ch'
-  - name: 'Github'
-    link: 'https://github.com'
-    intro: 'Build software better, together.'
+  - name: 'blog'
+    link: 'https://blog.josephz.top'
+  - name: 'relax'
+    link: 'https://mc.josephz.top'
+  - name: 'docs'
+    link: 'https://doc.josephz.top'
 
 site_birthday: '07/21/2021'
 
-main_color:
+theme_color:
   light: '#95afff'
   dark: '#051f7f'
 
@@ -47,27 +41,11 @@ aplayer:
 # like waline
 comment: none
 
-background:
-  light_color: '#95afff'
-  dark_color: '#555555'
-  enable_image: false
-  pictures: 
-
-# do not change unless you know what you will do
 head:
-  - <link rel="stylesheet" href="'._HTML_RES_.'/css/header.css" type="text/css"/>
-  - <link rel="stylesheet" href="'._HTML_RES_.'/css/img.css" type="text/css"/>
-  - <link rel="stylesheet" href="'._HTML_RES_.'/css/style.css" type="text/css"/>
-  - <link rel="stylesheet" href="'._HTML_RES_.'/css/side.css" type="text/css"/>
-  - <link rel="stylesheet" href="'._HTML_RES_.'/css/footer.css" type="text/css"/>
-  - <link rel="stylesheet" href="'._HTML_RES_.'/css/APlayer.min.css" type="text/css"/>
+#  - <link rel="stylesheet" href="'.res.'/css/APlayer.min.css" type="text/css"/>
+
 include_func:
-  - _RES_.'/conf/goto.php'
-  - _RES_.'/conf/videos.php'
-  - _RES_.'/conf/links.php'
-  - _RES_.'/conf/pictures.php'
-  - _RES_.'/conf/projects.php'
-  - _PAGE_BG_
+
 files_const:
   php_res_dir: pbase.'/res'
   html_res_dir: base.'/res'

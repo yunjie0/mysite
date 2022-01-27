@@ -18,60 +18,34 @@
     OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-
-function des($fp,$a,$b) {
-	fwrite($fp, 'define("'.$a.'","'.$b.'");
-');
-}
-
-function de($fp,$a,$b) {
-	fwrite($fp, 'define("'.$a.'",'.$b.');
-');
-}
-
-function arr($fp,$a,$p) {
-	fwrite($fp, '$'.$a.'=array("');
-	for ($i=0;$i<count($p);$i++) {
-		fwrite($fp, $p[$i]);
-		if (count($p)-$i <= 1) {
-			fwrite($fp, ');');
+function refresh_dir($path) {
+	if(is_dir($path)) {
+		$p = scandir($path);
+		foreach($p as $val) {
+			if($val !="." && $val !=".."){
+				if(is_dir($path.$val)){
+					refresh_dir($path.$val.'/');
+				} else {
+					unlink($path.$val);
+				}
+			}
 		}
-		else fwrite($fp, ',');
 	}
 }
 
-function arrd($fp,$a,$p,$t,$type) {
-	fwrite($fp, '$'.$a.'=[
-');
-	for ($i=0;$i<count($p);$i++) {
-		fwrite($fp, $i.'=>[
-');
-		for ($j=0;$j<count($t);$j++) {
-			fwrite($fp, '"'.$t[$j].'"=>');
-			if ($type[$j] == 'str') fwrite($fp, '"'.$p[$i][$t[$j]].'",
-');
+function rmrf($path) {
+	if(is_dir($path)) {
+		$p = scandir($path);
+		foreach($p as $val) {
+			if($val !="." && $val !=".."){
+				if(is_dir($path.$val)){
+					rmrf($path.$val.'/');
+					rmdir($path.$val.'/');
+				} else {
+					unlink($path.$val);
+				}
+			}
 		}
-		fwrite($fp, '],
-');
 	}
-	fwrite($fp, '];
-');
 }
-
-function in($fp,$str) {
-	fwrite($fp, 'include('.$str.');
-');
-}
-
-function ins($fp,$str) {
-	fwrite($fp, 'include("'.$str.'");
-');
-}
-
-function s($fp,$str) {
-	fwrite($fp, 'echo \''.$str.'\'
-');
-}
-
-
 ?>
