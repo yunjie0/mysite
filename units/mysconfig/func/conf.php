@@ -69,7 +69,7 @@ function ins($fp,$str) {
 }
 
 function s($fp,$str) {
-	fwrite($fp, 'echo \''.$str.'\'
+	fwrite($fp, 'echo \''.$str.'\';
 ');
 }
 

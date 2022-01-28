@@ -1,6 +1,6 @@
 <?php
 /***
-    The Source Code of JOSEPHZ.TOP
+    The Source Code of mys
     (C) 2021-2022 Joseph Z.
     All rights reserved.
     license: BSD 3-Clause 
@@ -18,41 +18,20 @@
     OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-?>
-<!doctype html>
+?><!doctype html>
 <html>
 <head>
 <?php
     include("../res/conf/const.php");
     include(_INCLUDE_);
-	echo '<title>'._HOME_NAME_.'</title>';
+	echo '<title>'.HOME_NAME.'</title>';
 ?>
 </head> 
 <body>
-<?php
-    include(_PAGE_HEADER_);
-?>
     <div class="container">
         <center>
-			<h1>小屋</h1>
-            <h3><?php echo _HOME_NAME_;?></h3>
-            <div>
-<?php
-	for ($i=0; $home_pages_local[$i] != "___END"; $i++) {
-		echo '<a href="'._HTML_BASE_.'/home/'.$home_pages_local[$i].'.php" target="_self" rel="noopener"><div class="button_big"><b style="font-size:15px;">'.$home_pages_local_title[$i].'</b><br>'.$home_pages_local_intro[$i].'</div></a>';
-	}
-	for ($i=0; $home_pages_other[$i] != "___END"; $i++) {
-		echo '<a href='.$home_pages_other[$i].' target="_self" rel="noopener"><div class="button_big"><b style="font-size:15px;">'.$home_pages_other_title[$i].'</b><br>'.$home_pages_other_intro[$i].'</div></a>';
-	}
-?>
-            </div>
+            <b style="font-size:200%;"><?php echo HOME_NAME;?></b>
         </center>
-<?php
-    include(_COMMENT_);
-?>
     </div>
-<?php
-    include(_PAGE_FOOTER_);
-?>
 </body>
 </html>

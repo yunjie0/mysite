@@ -17,7 +17,7 @@ intro: 'This is mys.'
 home_name: 'mys home'
 
 # your avatar's link
-avatar: '".base."/avatar.png'
+avatar: '".res."/avatar.png'
 
 othersite:
   - name: 'blog'
@@ -35,7 +35,7 @@ theme_color:
 
 aplayer:
   enable: true
-  default_cover: '"._RES_."/img/aplayer/default.png'
+  default_cover: '".res."/img/aplayer/default.png'
 
 # Comment System
 # like waline
