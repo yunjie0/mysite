@@ -1,7 +1,12 @@
 <?php
 define("CON_HEAD","con_head");
 define("CON_FOOT","con_foot");
+define("INDEX_STYL","index_styl");
 define("INDEX_IMG_STYL","index_img");
 define("INDEX_H1_STYL","index_h1");
 define("INDEX_INTRO_STYL","index_intro");
-?>
+define("NOTE_BLOCK","note_block");
+define("INFO_BLOCK","info_block");
+define("theme_ppath","C:/hexo/joseph/mysite/units/theme-blueboard/");
+define("theme_path","/t/mysite/units/theme-blueboard/");
+$background_imgs=array("https://josephz.top/res/img/pictures/wall/1.jpg","https://josephz.top/res/img/pictures/wall/2.jpg","https://josephz.top/res/img/pictures/wall/3.jpg","https://josephz.top/res/img/pictures/wall/4.jpg","https://josephz.top/res/img/pictures/wall/5.jpg","https://josephz.top/res/img/pictures/wall/6.jpg","https://josephz.top/res/img/pictures/wall/7.jpg","https://josephz.top/res/img/pictures/wall/8.jpg","https://josephz.top/res/img/pictures/wall/9.jpg");?>

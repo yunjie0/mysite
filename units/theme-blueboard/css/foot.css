@@ -21,7 +21,7 @@
     text-align:center;
     margin: 1% auto 0;
     width: 80%;
-    background: var(--theme-color-hover);
+    background: var(--theme-color);
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
     border-radius: 3px;

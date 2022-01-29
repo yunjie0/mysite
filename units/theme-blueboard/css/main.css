@@ -20,7 +20,7 @@
 .main_container {
     width: 80%;
     margin: 1% auto 0;
-    background: var(--theme-color-hover);
+    background: var(--theme-color);
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
     border-radius: 3px;
@@ -35,14 +35,43 @@
     -webkit-backdrop-filter: blur( 12px );
 }
 
+.index_styl {
+    width: 100%;
+	background-color: rgba(128,128,128,0.4);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
 .index_img {
-	border-radius:183px;
-	zoom:40%;
-	margin-top:25px;
+	border-radius: 183px;
+	zoom: 40%;
+	margin-top: 25px;
 }
+
 .index_h1 {
-	font-size:200%;
+	font-size: 200%;
+	color: var(--font-color);
+	text-shadow: 1px 2px 6px var(--font-color);
 }
+.index_h1:hover {
+	text-shadow: 1px 2px 9px var(--font-color);
+}
+
 .index_intro {
 	font-size:20px;
+	color: var(--font-color);
+	text-shadow: 1px 2px 7px var(--font-color);
+}
+.index_intro:hover {
+	text-shadow: 1px 2px 10px var(--font-color);
+}
+
+.info_block {
+	width: 60%;
+	float: left;
+}
+
+.note_block {
+	width: 40%;
+	float: right;
 }

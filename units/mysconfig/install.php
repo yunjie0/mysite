@@ -51,10 +51,11 @@ echo 'Stage 1
 $fp = fopen("../../res/conf/include.php", "a");
 fwrite($fp,'<?php
 ');
-$in_include_1=array('pres.\'/conf/head.php\'',
-'pres.\'/conf/pages.php\'',
-'pres.\'/conf/version.php\'',
-'pres.\'/conf/theme.php\''
+$in_include_1=array(
+	'pres.\'/conf/pages.php\'',
+	'pres.\'/conf/version.php\'',
+	'pres.\'/conf/theme.php\'',
+	'pres.\'/conf/head.php\''
 );
 for ($i=0;$i<count($in_include_1);$i++) {
 	in($fp,$in_include_1[$i]);
@@ -167,22 +168,33 @@ fwrite($fp,'<?php
 ');
 if ($t_value['inc_func'] != NULL) {
 	for ($i=0;$i<count($t_value['inc_func']);$i++) {
-		ins($fp,$value['php_base'].'/units/theme-blueboard/'.$t_value['inc_func'][$i]);
+		ins($fp,$value['php_base'].'/units/theme-'.$value['theme'].'/'.$t_value['inc_func'][$i]);
 	}
 }
 
 fwrite($fp,'?>');
-fclose($fp);
+fclose($fp);	
 
 
 // theme.php
 $fp = fopen("../../res/conf/theme.php", "a");
 fwrite($fp,'<?php
 ');
-$des_a_theme_1=array('CON_HEAD','CON_FOOT','INDEX_IMG_STYL','INDEX_H1_STYL','INDEX_INTRO_STYL');
-$des_b_theme_1=array('head','foot','index_img_styl','index_h1_styl','index_intro_styl');
+$des_a_theme_1=array('CON_HEAD','CON_FOOT','INDEX_STYL','INDEX_IMG_STYL','INDEX_H1_STYL','INDEX_INTRO_STYL','NOTE_BLOCK','INFO_BLOCK');
+$des_b_theme_1=array('head','foot','index_styl','index_img_styl','index_h1_styl','index_intro_styl','note_block','info_block');
 for ($i=0;$i<count($des_a_theme_1);$i++) {
 	des($fp,$des_a_theme_1[$i],$t_value['containers'][$des_b_theme_1[$i]]);
+}
+$des_a_theme_2=array('theme_ppath','theme_path');
+$des_b_theme_2=array(
+	$value['php_base'].'/units/theme-'.$value['theme'].'/',
+	$value['html_base'].'/units/theme-'.$value['theme'].'/'
+);
+for ($i=0;$i<count($des_a_theme_2);$i++) {
+	des($fp,$des_a_theme_2[$i],$des_b_theme_2[$i]);
+}
+if ($t_value['background'] != NULL) {
+	arr($fp,'background_imgs',$t_value['background'],'str');
 }
 
 fwrite($fp,'?>');

@@ -19,7 +19,8 @@
 
 .con_head {
     width: 100%;
-    background: var(--theme-color-hover);
+	top: 0px;
+    background: var(--theme-color);
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
     border: 1px solid var(--theme-card-b);

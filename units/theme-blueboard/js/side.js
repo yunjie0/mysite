@@ -1,4 +1,3 @@
-<?php
 /***
     The Source Code of mys
     (C) 2021-2022 Joseph Z.
@@ -19,22 +18,23 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-function foot_container() {
-	global $othersite;
-	
-	echo '<center><p>(C) 2021-2022 WCC</p><p>MyS ❤ Blueboard</p><a href='.base.'/ target="_blank">主页</a> | <a href='.base.'/home target="_blank">'.HOME_NAME.'</a>';
-	for ($i=0; $i<count($othersite); $i++) {
-		echo ' | <a href='.$othersite[$i]['link'].' target="_blank">'.$othersite[$i]['name'].'</a>';
-	}
-	echo '</p><p>本站已勉强存活了<script language = "JavaScript"type = "text/javascript" >var urodz = new Date("'.SITE_BIRTHDAY.'");var now = new Date();var ile = now.getTime() - urodz.getTime();var dni = Math.floor(ile / (1000 * 60 * 60 * 24));document.write( + dni)</script>天</p></center>';
+var mode;
+var date = new Date();  
+var h = date.getHours();          // 获取小时
+if (h <= 6 || h >= 18) {
+//	console.log('It is night now!');
+	mode == true;
+	enable_darkmode();
 }
 
-function foot_init() {
-	side_init();
-	
-	echo '<div class="'.CON_FOOT.'">';
-	foot_container();
-	echo '</div>';
-}
+function darkmode_click() {
+	if (mode == false)	mode = true;
+	else 				mode = false;
+	enable_darkmode();
+};
 
-?>
+function up_click() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};

@@ -27,18 +27,15 @@ echo '
 body {
 	background-color: var(--bg-color);
 ';
-/* 
-if (_SUPPORT_BG_) {
-	echo '
-	background:url('.res.'/img/pictures/'._BG_GROUP_.'/'.rand(0,_PICTURES_NUM_).'.jpg);
-	background-attachment:fixed;
+if ($background_imgs != NULL) {
+	echo 'background:url('.$background_imgs[rand(0,count($background_imgs)-1)].');';
+	echo 'background-attachment:fixed;
 	background-position: center top;
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment:fixed;
-';
-} */
+	background-attachment:fixed;';
+} 
 echo '};
 </style>';
 ?>

@@ -27,6 +27,17 @@ function head_container() {
 	for ($i=0; $i<count($othersite); $i++) {
 		echo '<a href='.$othersite[$i]['link'].' target="_self" rel="noopener"><font><div class="head_card">'.$othersite[$i]['name'].'</font></div></a>';
 	}
-}		
+}
+
+function back_init() {
+	echo '<div class="back"></div>';
+}
+
+function head_init() {
+	back_init();
+	echo '<div class="'.CON_HEAD.'">';
+	head_container();
+	echo '</div>';
+}
 
 ?>

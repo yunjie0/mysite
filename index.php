@@ -34,23 +34,18 @@ define("INDEX_INTRO_STRL", 'index_intro');
 <body>
 <?php
 function main_container() {
-	echo '<div class="main_container">123</div>';
+	echo '<div class="'.INDEX_STYL.'"><div class="'.INFO_BLOCK.'">
+	<center><img class="'.INDEX_IMG_STYL.'" src='.AVATAR.' /><br>
+	<b class="'.INDEX_H1_STYL.'">'.SITE_NAME.'</b>
+	<p class="'.INDEX_INTRO_STYL.'">'.INTRO.'</p></center></div>';
+	echo '<div class="'.NOTE_BLOCK.'">123456';
+	echo '</div></div>';
+	echo '<center><div class="main_container">123</div></center>';
 }
 
-echo '<div class="'.CON_HEAD.'">';
-head_container();
-echo '</div>';
-echo '<center>
-		<img class="'.INDEX_IMG_STYL.'" src='.AVATAR.' /><br>
-		<b class="'.INDEX_H1_STYL.'">'.SITE_NAME.'</b>
-		<p class="'.INDEX_INTRO_STYL.'">'.INTRO.'</p>
-';
+head_init();
 main_container();
-echo '</center>
-';
-echo '<div class="'.CON_FOOT.'">';
-foot_container();
-echo '</div>';
+foot_init();
 ?>
 </body>
 </html>

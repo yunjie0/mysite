@@ -29,10 +29,12 @@ function de($fp,$a,$b) {
 ');
 }
 
-function arr($fp,$a,$p) {
-	fwrite($fp, '$'.$a.'=array("');
+function arr($fp,$a,$p,$type) {
+	fwrite($fp, '$'.$a.'=array(');
 	for ($i=0;$i<count($p);$i++) {
+		if ($type == 'str') fwrite($fp,'"');
 		fwrite($fp, $p[$i]);
+		if ($type == 'str') fwrite($fp,'"');
 		if (count($p)-$i <= 1) {
 			fwrite($fp, ');');
 		}

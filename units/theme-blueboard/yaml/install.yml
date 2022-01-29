@@ -1,21 +1,37 @@
+background:
+  - 'https://josephz.top/res/img/pictures/wall/1.jpg'
+  - 'https://josephz.top/res/img/pictures/wall/2.jpg'
+  - 'https://josephz.top/res/img/pictures/wall/3.jpg'
+  - 'https://josephz.top/res/img/pictures/wall/4.jpg'
+  - 'https://josephz.top/res/img/pictures/wall/5.jpg'
+  - 'https://josephz.top/res/img/pictures/wall/6.jpg'
+  - 'https://josephz.top/res/img/pictures/wall/7.jpg'
+  - 'https://josephz.top/res/img/pictures/wall/8.jpg'
+  - 'https://josephz.top/res/img/pictures/wall/9.jpg'
+
 # do not change unless you know what you will do
 head:
   - <html lang="zh-CN">
-  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/head.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/img.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/main.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/style.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/side.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/foot.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.theme_path.'css/head.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.theme_path.'css/img.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.theme_path.'css/main.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.theme_path.'css/style.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.theme_path.'css/side.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.theme_path.'css/foot.css" type="text/css"/>
+  - <script src="'.theme_path.'js/side.js" type="text/javascript"></script>
 
 inc_func:
   - 'php/bg.php'
   - 'php/head.php'
+  - 'php/side.php'
   - 'php/foot.php'
   
 containers:
+  head: 'con_head'
+  foot: 'con_foot'
+  info_block: 'info_block'
+  note_block: 'note_block'
+  index_styl: 'index_styl'
   index_img_styl: 'index_img'
   index_h1_styl: 'index_h1'
   index_intro_styl: 'index_intro'
-  head: 'con_head'
-  foot: 'con_foot'

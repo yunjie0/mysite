@@ -38,16 +38,9 @@ function main_container() {
 	echo '</div>';
 }
 
-echo '<div class="'.CON_HEAD.'">';
-head_container();
-echo '</div>';
-echo '<center>';
+head_init();
 main_container();
-echo '</center>
-';
-echo '<div class="'.CON_FOOT.'">';
-foot_container();
-echo '</div>';
+foot_init();
 ?>
 </body>
 </html>

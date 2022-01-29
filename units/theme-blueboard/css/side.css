@@ -33,7 +33,6 @@
 	height: 24px;
 	color: var(--font-color);
 	background: var(--theme-card-hover);
-/*	box-shadow: var(--theme-card-a);*/
 	border-radius: 6px;
 }
 
