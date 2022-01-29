@@ -28,6 +28,7 @@
     transition: 0.25s;
 	padding: 1% 2%;
 	color: var(--font-color);
+	z-index: 2;
 }
 .main_container:hover{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -68,10 +69,12 @@
 
 .info_block {
 	width: 60%;
+	z-index: 3;
 	float: left;
 }
 
 .note_block {
 	width: 40%;
+	z-index: 3;
 	float: right;
 }

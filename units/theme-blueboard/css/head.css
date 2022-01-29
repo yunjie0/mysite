@@ -25,12 +25,14 @@
     -webkit-backdrop-filter: blur( 9px );
     border: 1px solid var(--theme-card-b);
     transition: 0.25s;
+	z-index: 2;
 }
 .head_card{
     margin: 10px 20px;
     color: var(--font-color);
     text-align: center;
     display:inline-block;
+	z-index: 3;
 }
 
 .head_card:hover{

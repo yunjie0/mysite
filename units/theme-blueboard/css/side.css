@@ -25,6 +25,7 @@
 	right: 10px;
 	position: fixed;
 	padding: 5px 3px;
+	z-index: 999;
 }
 
 .side_button_0 {
