@@ -101,11 +101,11 @@ $de_b_const_2=array('php_res_dir','html_res_dir');
 for ($i=0;$i<count($de_a_const_2);$i++) {
 	de($fp,$de_a_const_2[$i],$value['files_const'][$de_b_const_2[$i]]);
 }
-$des_a_const_3=array('THEME_COLOR_LIGHT','THEME_COLOR_DARK');
+/*$des_a_const_3=array('THEME_COLOR_LIGHT','THEME_COLOR_DARK');
 $des_b_const_3=array('light','dark');
 for ($i=0;$i<count($des_a_const_3);$i++) {
 	des($fp,$des_a_const_3[$i],$value['theme_color'][$des_b_const_3[$i]]);
-}
+}*/
 $des_a_const_4=array('_INCLUDE_');
 $des_b_const_4=array('".pres."/conf/include.php');
 for ($i=0;$i<count($des_a_const_4);$i++) {

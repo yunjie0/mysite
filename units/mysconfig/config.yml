@@ -32,10 +32,6 @@ othersite:
 
 site_birthday: '07/21/2021'
 
-theme_color:
-  light: '#95afff'
-  dark: '#051f7f'
-
 aplayer:
   enable: true
   default_cover: '".res."/img/aplayer/default.png'

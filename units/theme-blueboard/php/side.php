@@ -21,32 +21,6 @@
 ?>
 <script>
 
-function enable_darkmode() {
-	var styles = getComputedStyle(document.documentElement);
-
-	if (mode == false) {		// light
-		document.documentElement.style.setProperty("--bg-color","<?php echo THEME_COLOR_LIGHT;?>");
-		document.documentElement.style.setProperty("--theme-color","rgba( 255, 255, 255, 0.75 )");
-		document.documentElement.style.setProperty("--theme-card-hover","#dbdbdb");
-		document.documentElement.style.setProperty("--theme-card-a","5px 5px 10px #c9c9c9, -5px -5px 10px #ededed");
-		document.documentElement.style.setProperty("--theme-card-s","inset 5px 5px 10px #c9c9c9,inset -5px -5px 10px #ededed");
-		document.documentElement.style.setProperty("--theme-card-b","rgba( 255, 255, 255, 0.18 )");
-		document.documentElement.style.setProperty("--font-color","#000000");
-		document.documentElement.style.setProperty("--bg-c","0");
-	}
-	else {					// dark
-		document.documentElement.style.setProperty("--bg-color","<?php echo THEME_COLOR_DARK?>");
-		document.documentElement.style.setProperty("--theme-color","rgba( 3, 3, 3, 0.75 )");
-		document.documentElement.style.setProperty("--theme-card-hover","#222222");
-		document.documentElement.style.setProperty("--theme-card-a","5px 5px 10px #3b3b3b,-5px -5px 10px #4f4f4f");
-		document.documentElement.style.setProperty("--theme-card-s"," inset 5px 5px 10px #3b3b3b, inset -5px -5px 10px #4f4f4f");
-		document.documentElement.style.setProperty("--theme-card-b","rgba( 0, 0, 0, 0.18 )");
-		document.documentElement.style.setProperty("--font-color","#aaaaaa");
-		document.documentElement.style.setProperty("--bg-c","0.6");
-		
-	}
-//	console.log('enable dark mode:',mode);
-}
 
 </script>
 <?php

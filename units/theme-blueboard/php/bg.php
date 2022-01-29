@@ -22,7 +22,7 @@
 <?php
 echo '
 <style>:root{
-   --bg-color: '.THEME_COLOR_LIGHT.';
+   --bg-color: #cccccc;
 }
 body {
 	background-color: var(--bg-color);
