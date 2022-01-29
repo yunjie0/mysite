@@ -1,11 +1,9 @@
-<?php
 /***
-    The Source Code of JOSEPHZ.TOP
-    (C) 2021-2022 Joseph Z.
-    All rights reserved.
-    license: BSD 3-Clause 
+*   The Source Code of JOSEPHZ.TOP
+*   (C) 2021 Joseph Z.
+*   All rights reserved.
+*   license: BSD 3-Clause 
 ***/
-
 /*
     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
     AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
@@ -18,9 +16,22 @@
     OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-?>
-<?php
-if (_ENABLE_APLAYER_)
-	echo '<div id="aplayer"></div>';
-	include($_BASE_."/res/conf/aplayer.php");
-?>
+
+.con_head {
+    width: 100%;
+    background: var(--theme-color-hover);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border: 1px solid var(--theme-card-b);
+    transition: 0.25s;
+}
+.head_card{
+    margin: 10px 20px;
+    color: var(--font-color);
+    text-align: center;
+    display:inline-block;
+}
+
+.head_card:hover{
+	color: #666666;
+}

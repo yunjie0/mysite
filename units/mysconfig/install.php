@@ -53,14 +53,15 @@ fwrite($fp,'<?php
 ');
 $in_include_1=array('pres.\'/conf/head.php\'',
 'pres.\'/conf/pages.php\'',
-'pres.\'/web/version.php\''
+'pres.\'/conf/version.php\'',
+'pres.\'/conf/theme.php\''
 );
 for ($i=0;$i<count($in_include_1);$i++) {
 	in($fp,$in_include_1[$i]);
 }
 if ($value['include_func'] != NULL) {
 	for ($i=0;$i<count($value['include_func']);$i++) {
-		s($fp,$value['include_func'][$i]);
+		in($fp,$value['include_func'][$i]);
 	}
 }
 fwrite($fp,'?>');
@@ -123,7 +124,7 @@ fclose($fp);
 $fp = fopen("../../res/conf/pages.php", "a");
 fwrite($fp,'<?php
 ');
-arrd($fp,'othersite',$value['othersite'],array('name','link'),array('str','str'));
+arrd($fp,'othersite',$value['othersite'],array('flag','name','link'),array('str','str','str'));
 
 
 fwrite($fp,'?>');
@@ -132,9 +133,10 @@ fclose($fp);
 // version.php
 $fp = fopen("../../res/conf/version.php", "a");
 fwrite($fp,'<?php
-define("VERSION",'.$VERSION.');
+define("VERSION","'.$VERSION.'");
 ?>');
 fclose($fp);
+
 
 // stage 2
 
@@ -156,9 +158,34 @@ for ($i=0;$i<count($t_value['head']);$i++) {
 	s($fp,$t_value['head'][$i]);
 }
 
+fwrite($fp,'?>');
+fclose($fp);
+
+// include.php
+$fp = fopen("../../res/conf/include.php", "a");
+fwrite($fp,'<?php
+');
+if ($t_value['inc_func'] != NULL) {
+	for ($i=0;$i<count($t_value['inc_func']);$i++) {
+		ins($fp,$value['php_base'].'/units/theme-blueboard/'.$t_value['inc_func'][$i]);
+	}
+}
 
 fwrite($fp,'?>');
 fclose($fp);
 
+
+// theme.php
+$fp = fopen("../../res/conf/theme.php", "a");
+fwrite($fp,'<?php
+');
+$des_a_theme_1=array('CON_HEAD','CON_FOOT','INDEX_IMG_STYL','INDEX_H1_STYL','INDEX_INTRO_STYL');
+$des_b_theme_1=array('head','foot','index_img_styl','index_h1_styl','index_intro_styl');
+for ($i=0;$i<count($des_a_theme_1);$i++) {
+	des($fp,$des_a_theme_1[$i],$t_value['containers'][$des_b_theme_1[$i]]);
+}
+
+fwrite($fp,'?>');
+fclose($fp);
 
 ?>

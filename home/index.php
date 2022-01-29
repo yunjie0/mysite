@@ -22,16 +22,32 @@
 <html>
 <head>
 <?php
-    include("../res/conf/const.php");
-    include(_INCLUDE_);
-	echo '<title>'.HOME_NAME.'</title>';
+include("../res/conf/const.php");
+include(_INCLUDE_);
+echo '<title>'.HOME_NAME.'</title>';
+define("INDEX_IMG_STRL", 'index_img');
+define("INDEX_H1_STRL", 'index_h1');
+define("INDEX_INTRO_STRL", 'index_intro');
 ?>
 </head> 
 <body>
-    <div class="container">
-        <center>
-            <b style="font-size:200%;"><?php echo HOME_NAME;?></b>
-        </center>
-    </div>
+<?php
+function main_container() {
+	echo '<div class="main_container">';
+	echo '<h1>'.HOME_NAME.'</h1>';
+	echo '</div>';
+}
+
+echo '<div class="'.CON_HEAD.'">';
+head_container();
+echo '</div>';
+echo '<center>';
+main_container();
+echo '</center>
+';
+echo '<div class="'.CON_FOOT.'">';
+foot_container();
+echo '</div>';
+?>
 </body>
 </html>

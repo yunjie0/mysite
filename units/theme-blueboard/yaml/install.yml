@@ -1,7 +1,21 @@
 # do not change unless you know what you will do
 head:
-  - <link rel="stylesheet" href="'.res.'/css/header.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.res.'/css/img.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.res.'/css/style.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.res.'/css/side.css" type="text/css"/>
-  - <link rel="stylesheet" href="'.res.'/css/footer.css" type="text/css"/>
+  - <html lang="zh-CN">
+  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/head.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/img.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/main.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/style.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/side.css" type="text/css"/>
+  - <link rel="stylesheet" href="'.base.'/units/theme-blueboard/css/foot.css" type="text/css"/>
+
+inc_func:
+  - 'php/bg.php'
+  - 'php/head.php'
+  - 'php/foot.php'
+  
+containers:
+  index_img_styl: 'index_img'
+  index_h1_styl: 'index_h1'
+  index_intro_styl: 'index_intro'
+  head: 'con_head'
+  foot: 'con_foot'

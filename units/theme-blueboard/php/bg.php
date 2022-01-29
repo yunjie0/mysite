@@ -22,27 +22,15 @@
 <?php
 echo '
 <style>:root{
-   --bg-color: '._BG_COLOR_.';
-   --theme-color: rgba( 200, 210, 240, 0.75 );
-   --theme-color-hover: rgba( 255, 255, 255, 0.85 );
-   --theme-card-hover: #dbdbdb;
-   --theme-card-a: 5px 5px 10px #c9c9c9, -5px -5px 10px #ededed;
-   --theme-card-s: inset 5px 5px 10px #c9c9c9, inset -5px -5px 10px #ededed;
-   --theme-card-b: rgba( 255, 255, 255, 0.18 );
-   --font-color: #000000;
-   --filter: 100%;
-}
-img {
-	-webkit-filter: brightness(var(--filter));
-	filter: brightness(var(--filter));
+   --bg-color: '.THEME_COLOR_LIGHT.';
 }
 body {
 	background-color: var(--bg-color);
 ';
-	
+/* 
 if (_SUPPORT_BG_) {
 	echo '
-	background:url('._HTML_BASE_.'/res/img/pictures/'._BG_GROUP_.'/'.rand(0,_PICTURES_NUM_).'.jpg);
+	background:url('.res.'/img/pictures/'._BG_GROUP_.'/'.rand(0,_PICTURES_NUM_).'.jpg);
 	background-attachment:fixed;
 	background-position: center top;
 	background-position: right bottom;
@@ -50,7 +38,7 @@ if (_SUPPORT_BG_) {
 	background-size: cover;
 	background-attachment:fixed;
 ';
-}
+} */
 echo '};
 </style>';
 ?>

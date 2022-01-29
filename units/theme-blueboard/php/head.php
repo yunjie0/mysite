@@ -1,9 +1,11 @@
+<?php
 /***
-*   The Source Code of JOSEPHZ.TOP
-*   (C) 2021 Joseph Z.
-*   All rights reserved.
-*   license: BSD 3-Clause 
+    The Source Code of mys
+    (C) 2021-2022 Joseph Z.
+    All rights reserved.
+    license: BSD 3-Clause 
 ***/
+
 /*
     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
     AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
@@ -17,23 +19,14 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-.proj_block {
-    margin:5px 0;
-    color: var(--font-color);
-    border-radius: 12px;
-    background: var(--theme-card-hover);
-    box-shadow: var(--theme-card-a);
-    display: inline-block;
-    width: 100%;
-}
-.proj_block:hover {
-    box-shadow: var(--theme-card-s);
-}
-.proj_block span{
-    display: inline-block;
-    vertical-align: middle;
-    padding: 20px 0;
-}
-.proj_block img{
-    vertical-align: middle;
-}
+function head_container() {
+	global $othersite;
+	echo '<img style="border-radius:200px;zoom:20%;" src="'.AVATAR.'">';
+	echo '<a href='.base.'/ target="_self" rel="noopener"><font><div class="head_card">主页</font></div></a>
+	<a href='.base.'/home target="_self" rel="noopener"><font><div class="head_card">'.HOME_NAME.'</font></div></a>';
+	for ($i=0; $i<count($othersite); $i++) {
+		echo '<a href='.$othersite[$i]['link'].' target="_self" rel="noopener"><font><div class="head_card">'.$othersite[$i]['name'].'</font></div></a>';
+	}
+}		
+
+?>

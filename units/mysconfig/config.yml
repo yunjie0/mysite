@@ -20,11 +20,14 @@ home_name: 'mys home'
 avatar: '".res."/avatar.png'
 
 othersite:
-  - name: 'blog'
+  - flag: 'blog'
+    name: '博客'
     link: 'https://blog.josephz.top'
-  - name: 'relax'
+  - flag: 'relax'
+    name: '休闲'
     link: 'https://mc.josephz.top'
-  - name: 'docs'
+  - flag: 'docs'
+    name: '文档'
     link: 'https://doc.josephz.top'
 
 site_birthday: '07/21/2021'

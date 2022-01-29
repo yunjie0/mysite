@@ -23,18 +23,34 @@
 <html>
 <head>
 <?php
-    include("./res/conf/const.php");
-    include(_INCLUDE_);
-	echo '<title>'.SITE_NAME.'</title>';
+include("./res/conf/const.php");
+include(_INCLUDE_);
+echo '<title>'.SITE_NAME.'</title>';
+define("INDEX_IMG_STRL", 'index_img');
+define("INDEX_H1_STRL", 'index_h1');
+define("INDEX_INTRO_STRL", 'index_intro');
 ?>
 </head> 
 <body>
-    <div class="container">
-        <center>
-            <img style="border-radius:183px;zoom:40%;margin-top:25px;" src=<?php echo AVATAR;?> />
-            <b style="font-size:200%;"><?php echo SITE_NAME;?></b>
-            <p style="font-size:20px;"><?php echo INTRO;?></p>
-        </center>
-    </div>
+<?php
+function main_container() {
+	echo '<div class="main_container">123</div>';
+}
+
+echo '<div class="'.CON_HEAD.'">';
+head_container();
+echo '</div>';
+echo '<center>
+		<img class="'.INDEX_IMG_STYL.'" src='.AVATAR.' /><br>
+		<b class="'.INDEX_H1_STYL.'">'.SITE_NAME.'</b>
+		<p class="'.INDEX_INTRO_STYL.'">'.INTRO.'</p>
+';
+main_container();
+echo '</center>
+';
+echo '<div class="'.CON_FOOT.'">';
+foot_container();
+echo '</div>';
+?>
 </body>
 </html>

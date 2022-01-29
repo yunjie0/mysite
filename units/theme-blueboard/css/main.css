@@ -1,5 +1,5 @@
 /***
-*   The Source Code of JOSEPHZ.TOP
+*   The Source Code of mys
 *   (C) 2021 Joseph Z.
 *   All rights reserved.
 *   license: BSD 3-Clause 
@@ -17,21 +17,32 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#img_r {
-    -webkit-background-size: 220px 220px;
-    -moz-background-size: 220px 220px;
-    background-size: 220px 220px;
-    -webkit-border-radius: 110px;
-    border-radius: 110px;
-    -webkit-transition: -webkit-transform 0.5s ease-out;
-    -moz-transition: -moz-transform 0.5s ease-out;
-    -o-transition: -o-transform 0.5s ease-out;
-    -ms-transition: -ms-transform 0.5s ease-out;
+.main_container {
+    width: 80%;
+    margin: 1% auto 0;
+    background: var(--theme-color-hover);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 3px;
+    border: 1px solid var(--theme-card-b);
+    transition: 0.25s;
+	padding: 1% 2%;
+	color: var(--font-color);
 }
-#img_r:hover{
-    -webkit-transform: rotateZ(360deg);
-    -moz-transform: rotateZ(360deg);
-    -o-transform: rotateZ(360deg);
-    -ms-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
+.main_container:hover{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+}
+
+.index_img {
+	border-radius:183px;
+	zoom:40%;
+	margin-top:25px;
+}
+.index_h1 {
+	font-size:200%;
+}
+.index_intro {
+	font-size:20px;
 }
