@@ -22,7 +22,7 @@ $units=[
 ],
 ];
 $theme_blueboard=[
-    0 => [
+    [
         'background' => [
             0 => "https://josephz.top/res/img/pictures/wall/1.jpg",
             1 => "https://josephz.top/res/img/pictures/wall/2.jpg",
@@ -33,13 +33,13 @@ $theme_blueboard=[
             6 => "https://josephz.top/res/img/pictures/wall/7.jpg",
             7 => "https://josephz.top/res/img/pictures/wall/8.jpg",
             8 => "https://josephz.top/res/img/pictures/wall/9.jpg",
-        ];
-    ];
+        ]
+    ]
 ];
 $aplayer=[
-    0 => [
+    [
         'enable' => true,
         'default_cover' => "".res."/img/aplayer/default.png",
-    ];
+    ]
 ];
 ?>
