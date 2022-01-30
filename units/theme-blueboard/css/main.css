@@ -41,6 +41,8 @@
 	background-color: rgba(128,128,128,0.4);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
+	z-index: 2;
+	display:table;
 }
 
 .index_img {
@@ -70,11 +72,13 @@
 .info_block {
 	width: 60%;
 	z-index: 3;
-	float: left;
+	display: table-cell;
+	color: var(--font-color);
 }
 
 .note_block {
 	width: 40%;
 	z-index: 3;
-	float: right;
+	display: table-cell;
+	color: var(--font-color);
 }

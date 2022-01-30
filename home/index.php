@@ -35,7 +35,7 @@ define("INDEX_INTRO_STRL", 'index_intro');
 function main_container() {
 	echo '<div class="main_container">';
 	echo '<h1>'.HOME_NAME.'</h1>';
-	echo '</div>';
+	echo '</div><h2></h2>';
 }
 
 head_init();

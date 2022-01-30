@@ -1,14 +1,3 @@
-background:
-  - 'https://josephz.top/res/img/pictures/wall/1.jpg'
-  - 'https://josephz.top/res/img/pictures/wall/2.jpg'
-  - 'https://josephz.top/res/img/pictures/wall/3.jpg'
-  - 'https://josephz.top/res/img/pictures/wall/4.jpg'
-  - 'https://josephz.top/res/img/pictures/wall/5.jpg'
-  - 'https://josephz.top/res/img/pictures/wall/6.jpg'
-  - 'https://josephz.top/res/img/pictures/wall/7.jpg'
-  - 'https://josephz.top/res/img/pictures/wall/8.jpg'
-  - 'https://josephz.top/res/img/pictures/wall/9.jpg'
-
 # do not change unless you know what you will do
 head:
   - <html lang="zh-CN">

@@ -22,6 +22,7 @@
 $VERSION = 'v0.1.0-beta';
 
 include('func/conf.php');
+include('func/dump.php');
 include('func/refresh.php');
 require_once './vendor/autoload.php';
 use Symfony\Component\Yaml\Exception\ParseException;
@@ -52,9 +53,10 @@ $fp = fopen("../../res/conf/include.php", "a");
 fwrite($fp,'<?php
 ');
 $in_include_1=array(
-	'pres.\'/conf/pages.php\'',
 	'pres.\'/conf/version.php\'',
+	'pres.\'/conf/units.php\'',
 	'pres.\'/conf/theme.php\'',
+	'pres.\'/conf/pages.php\'',
 	'pres.\'/conf/head.php\''
 );
 for ($i=0;$i<count($in_include_1);$i++) {
@@ -193,8 +195,28 @@ $des_b_theme_2=array(
 for ($i=0;$i<count($des_a_theme_2);$i++) {
 	des($fp,$des_a_theme_2[$i],$des_b_theme_2[$i]);
 }
-if ($t_value['background'] != NULL) {
+/* if ($t_value['background'] != NULL) {
 	arr($fp,'background_imgs',$t_value['background'],'str');
+} */
+
+fwrite($fp,'?>');
+fclose($fp);
+
+// units.php
+$fp = fopen("../../res/conf/units.php", "a");
+fwrite($fp,'<?php
+');
+if ($value['units'] != NULL) {
+	arrd($fp,'units',$value['units'],array('name','class','yamldir'), array('str','str','str'));
+	for ($i=0; $i<count($value['units']); $i++) {
+		if ($value['units'][$i]['conf'] != NULL) {
+			if ($value['units'][$i]['class'] == 'theme')
+				fwrite($fp, '$theme_'.$value['units'][$i]['name'].'=');
+			else	fwrite($fp, '$'.$value['units'][$i]['name'].'=');
+			VarDump::dump($fp,$value['units'][$i]['conf']);
+//			var_dump($value['units'][$i]['conf']);
+		}
+	}
 }
 
 fwrite($fp,'?>');

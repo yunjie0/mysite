@@ -32,16 +32,43 @@ othersite:
 
 site_birthday: '07/21/2021'
 
-aplayer:
-  enable: true
-  default_cover: '".res."/img/aplayer/default.png'
+units:
+  - name: mysconfig
+    class: base
+    yamldir: /
+    conf:
+  - name: blueboard
+    class: theme
+    yamldir:
+    conf:
+      - background:
+        - 'https://josephz.top/res/img/pictures/wall/1.jpg'
+        - 'https://josephz.top/res/img/pictures/wall/2.jpg'
+        - 'https://josephz.top/res/img/pictures/wall/3.jpg'
+        - 'https://josephz.top/res/img/pictures/wall/4.jpg'
+        - 'https://josephz.top/res/img/pictures/wall/5.jpg'
+        - 'https://josephz.top/res/img/pictures/wall/6.jpg'
+        - 'https://josephz.top/res/img/pictures/wall/7.jpg'
+        - 'https://josephz.top/res/img/pictures/wall/8.jpg'
+        - 'https://josephz.top/res/img/pictures/wall/9.jpg'
+  - name: parsedown
+    class: function
+    yamldir: 
+    conf:
+  - name: aplayer
+    class: function
+    yamldir: 
+    conf:
+       - enable: true
+         default_cover: '".res."/img/aplayer/default.png'
+
 
 # Comment System
 # like waline
 comment: none
 
 head:
-#  - <link rel="stylesheet" href="'.res.'/css/APlayer.min.css" type="text/css"/>
+#  - <link rel="stylesheet" href="xxx" type="text/css"/>
 
 include_func:
 
