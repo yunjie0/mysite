@@ -37,12 +37,14 @@ function main_container() {
 	global $othersite;
 	
 	echo '<div class="'.INDEX_STYL.'"><div class="'.INFO_BLOCK.'">
-	<center><img class="'.INDEX_IMG_STYL.'" src='.AVATAR.' /><br>
+	<img class="'.INDEX_IMG_STYL.'" id="img_r"	src='.AVATAR.' /><br>
 	<b class="'.INDEX_H1_STYL.'">'.SITE_NAME.'</b>
-	<p class="'.INDEX_INTRO_STYL.'">'.INTRO.'</p></center></div>';
+	<p class="'.INDEX_INTRO_STYL.'">'.INTRO.'</p></div>';
+	
 	echo '<div class="'.NOTE_BLOCK.'">条子';
+	
 	echo '</div></div>';
-	echo '<center><div class="main_container">';
+	echo '<div class="main_container" align="center">';
 	
 	// Home Page
 	echo '<a href="'.base.'/home" target="_self" rel="noopener"><div class="button_big"><p style="font-size:15px;">'.HOME_NAME.'</p></div></a>';
@@ -50,7 +52,7 @@ function main_container() {
 	for ($i=0; $i<count($othersite); $i++) {
 		echo '<a href="'.$othersite[$i]['link'].'" target="_self" rel="noopener"><div class="button_big"><p style="font-size:15px;">'.$othersite[$i]['name'].'</p></div></a>';
 	}
-	echo '</div></center>';
+	echo '</div>';
 }
 
 head_init();

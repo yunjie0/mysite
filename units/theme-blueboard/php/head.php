@@ -21,7 +21,8 @@
 
 function head_container() {
 	global $othersite;
-	echo '<img style="border-radius:200px;zoom:20%;" src="'.AVATAR.'">';
+	echo '<a href='.base.'/ target="_self" rel="noopener">
+	<img style="border-radius:200px;zoom:20%;" id="img_r" src="'.AVATAR.'"></a>';
 	echo '<a href='.base.'/ target="_self" rel="noopener"><font><div class="head_card">主页</font></div></a>
 	<a href='.base.'/home target="_self" rel="noopener"><font><div class="head_card">'.HOME_NAME.'</font></div></a>';
 	for ($i=0; $i<count($othersite); $i++) {

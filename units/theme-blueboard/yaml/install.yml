@@ -1,3 +1,5 @@
+path: '/units/theme-blueboard/'
+
 # do not change unless you know what you will do
 head:
   - <html lang="zh-CN">
@@ -7,6 +9,7 @@ head:
   - <link rel="stylesheet" href="'.theme_path.'css/style.css" type="text/css"/>
   - <link rel="stylesheet" href="'.theme_path.'css/side.css" type="text/css"/>
   - <link rel="stylesheet" href="'.theme_path.'css/foot.css" type="text/css"/>
+  - <script src="'.theme_path.'js/darkmode.js" type="text/javascript"></script>
   - <script src="'.theme_path.'js/side.js" type="text/javascript"></script>
 
 inc_func:

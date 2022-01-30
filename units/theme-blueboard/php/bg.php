@@ -25,10 +25,10 @@ echo '
    --bg-color: #cccccc;
 }
 body {
-	background-color: var(--bg-color);
+	background-color: var(--bg-color);margin:0;padding:0;
 ';
-if ($background_imgs != NULL) {
-	echo 'background:url('.$background_imgs[rand(0,count($background_imgs)-1)].');';
+if ($theme_blueboard[0]['background'] != NULL) {
+	echo 'background:url('.$theme_blueboard[0]['background'][rand(0,count($theme_blueboard[0]['background'])-1)].');';
 	echo 'background-attachment:fixed;
 	background-position: center top;
 	background-position: right bottom;

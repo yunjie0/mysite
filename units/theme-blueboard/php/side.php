@@ -1,6 +1,6 @@
 <?php
 /***
-    The Source Code of JOSEPHZ.TOP
+    The Source Code of mys
     (C) 2021-2022 Joseph Z.
     All rights reserved.
     license: BSD 3-Clause 
@@ -18,12 +18,7 @@
     OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-?>
-<script>
 
-
-</script>
-<?php
 function side_init() {
 	$array_side=array(
 		'darkmode',

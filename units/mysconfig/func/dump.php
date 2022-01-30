@@ -23,12 +23,14 @@ class VarDump
 {
     private static $isInLoop = false;
     private static $buffer = false;
+	private static $floors = 0;
  
     public static function dump()
     {
 		global $fp;
         $args = func_get_args();
         $args_num = func_num_args();
+		self::$floors++;
         if (self::$buffer && $args_num == 1) {
             $args = func_get_args();
             $args = isset($args[0]) ? $args[0] : [];
@@ -69,6 +71,7 @@ class VarDump
                     fwrite($fp, "unknown type");
             }
         }
+		self::$floors--;
     }
  
     public static function dumpx($fp)
@@ -147,7 +150,11 @@ class VarDump
         }
         array_pop($pads);
         $pad = implode('', $pads);
-        fwrite($fp, "\n{$pad}];");
+        fwrite($fp, "\n{$pad}]");
+		if (self::$floors==1)
+			fwrite($fp, ";");
+		else
+			fwrite($fp, ",");
         if ($pad == '') {
             fwrite($fp, "\n");
         }

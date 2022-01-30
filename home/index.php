@@ -29,13 +29,21 @@ define("INDEX_IMG_STRL", 'index_img');
 define("INDEX_H1_STRL", 'index_h1');
 define("INDEX_INTRO_STRL", 'index_intro');
 ?>
-</head> 
+</head>
 <body>
 <?php
 function main_container() {
+	global $parsedown;
+	
 	echo '<div class="main_container">';
-	echo '<h1>'.HOME_NAME.'</h1>';
-	echo '</div><h2></h2>';
+	echo '<h1 class="'.INDEX_H1_STYL.'" align="center">'.HOME_NAME.'</h1>';
+	require_once pbase.$parsedown['path'].'Parsedown.php';
+	$Parsedown = new Parsedown();
+	
+	$fp = fopen('./main.md', 'r');
+	echo $Parsedown->text(fread($fp,filesize("./main.md")));
+
+	echo '</div>';
 }
 
 head_init();

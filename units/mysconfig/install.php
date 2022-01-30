@@ -206,15 +206,37 @@ fclose($fp);
 $fp = fopen("../../res/conf/units.php", "a");
 fwrite($fp,'<?php
 ');
-if ($value['units'] != NULL) {
+if ($value['units'] != NULL) 
+{
 	arrd($fp,'units',$value['units'],array('name','class','yamldir'), array('str','str','str'));
-	for ($i=0; $i<count($value['units']); $i++) {
-		if ($value['units'][$i]['conf'] != NULL) {
-			if ($value['units'][$i]['class'] == 'theme')
-				fwrite($fp, '$theme_'.$value['units'][$i]['name'].'=');
-			else	fwrite($fp, '$'.$value['units'][$i]['name'].'=');
-			VarDump::dump($fp,$value['units'][$i]['conf']);
-//			var_dump($value['units'][$i]['conf']);
+	
+	for ($i=0; $i<count($value['units']); $i++) 
+	{
+		if ($value['units'][$i]['yamldir'] != NULL)	
+			$yaml_dir=$value['units'][$i]['yamldir'];
+		else	
+			$yaml_dir='yaml';
+		
+		if ($value['units'][$i]['class'] == 'theme') 
+		{
+			fwrite($fp, '$theme_'.$value['units'][$i]['name'].'=');
+			if ($value['units'][$i]['conf'] != NULL) 
+			{
+				VarDump::dump($value['units'][$i]['conf']);
+			}
+		}
+		else if ($value['units'][$i]['class'] == 'function') 
+		{
+			$u_value = Yaml::parseFile('../'.$value['units'][$i]['name'].'/'.$yaml_dir.'/install.yml');
+			fwrite($fp, '$'.$value['units'][$i]['name'].'=');
+			if ($value['units'][$i]['conf'] != NULL) 
+			{
+				VarDump::dump($u_value+$value['units'][$i]['conf']);
+			}
+			else
+			{
+				VarDump::dump($u_value);
+			}
 		}
 	}
 }

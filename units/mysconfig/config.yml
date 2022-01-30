@@ -19,6 +19,7 @@ home_name: 'mys home'
 # your avatar's link
 avatar: '".res."/avatar.png'
 
+# other sites
 othersite:
   - flag: 'blog'
     name: '博客'
@@ -30,14 +31,23 @@ othersite:
     name: '文档'
     link: 'https://doc.josephz.top'
 
+# the birthday of your site
 site_birthday: '07/21/2021'
 
+# Units
+# format:
+#   - name: 
+#     class: 
+#     yamldir:
+#     conf:
+#       - xxx: xxx
+#       - yyy: yyy
 units:
-  - name: mysconfig
-    class: base
+  - name: 'mysconfig'
+    class: 'base'
     yamldir: /
     conf:
-  - name: blueboard
+  - name: 'blueboard'
     class: theme
     yamldir:
     conf:
@@ -51,12 +61,12 @@ units:
         - 'https://josephz.top/res/img/pictures/wall/7.jpg'
         - 'https://josephz.top/res/img/pictures/wall/8.jpg'
         - 'https://josephz.top/res/img/pictures/wall/9.jpg'
-  - name: parsedown
-    class: function
+  - name: 'parsedown'
+    class: 'function'
     yamldir: 
     conf:
   - name: aplayer
-    class: function
+    class: 'function'
     yamldir: 
     conf:
        - enable: true
