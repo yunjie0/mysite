@@ -52,7 +52,7 @@ function foot_container() {
 }
 
 function foot_init() {
-	side_init();
+	otherdiv_foot();
 	
 	EasyHtml::div_start(CON_FOOT,NULL,NULL);
 		foot_container();

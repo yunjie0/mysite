@@ -258,4 +258,6 @@ if ($value['units'] != NULL)
 fwrite($fp,'?>');
 fclose($fp);
 
+//exit();
+
 ?>

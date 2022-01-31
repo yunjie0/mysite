@@ -25,6 +25,11 @@ $units=[
 "class"=>"function",
 "yamldir"=>"",
 ],
+5=>[
+"name"=>"mysnote",
+"class"=>"function",
+"yamldir"=>"",
+],
 ];
 $theme_blueboard=[
     0 => [
@@ -33,11 +38,6 @@ $theme_blueboard=[
             1 => "https://josephz.top/res/img/pictures/wall/2.jpg",
             2 => "https://josephz.top/res/img/pictures/wall/3.jpg",
             3 => "https://josephz.top/res/img/pictures/wall/4.jpg",
-            4 => "https://josephz.top/res/img/pictures/wall/5.jpg",
-            5 => "https://josephz.top/res/img/pictures/wall/6.jpg",
-            6 => "https://josephz.top/res/img/pictures/wall/7.jpg",
-            7 => "https://josephz.top/res/img/pictures/wall/8.jpg",
-            8 => "https://josephz.top/res/img/pictures/wall/9.jpg",
         ],
     ],
 ];
@@ -51,9 +51,13 @@ $lib_mbase=[
 include("C:/hexo/joseph/mysite/units/lib-mbase/main.php");
 $aplayer=[
     'path' => "/units/aplayer/",
+    'main_php' => "main.php",
     0 => [
         'enable' => true,
-        'default_cover' => "".res."/img/aplayer/default.png",
+        'config' => "config.js",
     ],
+];
+$mysnote=[
+    'path' => "/units/mysnote/",
 ];
 ?>

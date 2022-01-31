@@ -34,7 +34,8 @@ define("INDEX_INTRO_STRL", 'index_intro');
 <body>
 <?php
 function main_container() {
-	global $othersite;
+	global $othersite,$mysnote;
+	include(pbase.$mysnote['path'].'note.php');
 	
 	EasyHtml::div_start(INDEX_STYL,NULL,NULL);
 		EasyHtml::div_start(INFO_BLOCK,NULL,NULL);
@@ -47,7 +48,7 @@ function main_container() {
 		EasyHtml::div_end();
 	
 		EasyHtml::div_start(NOTE_BLOCK,NULL,NULL);
-//			note_init();
+			MysNote::init();
 		EasyHtml::div_end();
 	EasyHtml::div_end();
 	

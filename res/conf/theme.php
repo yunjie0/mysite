@@ -8,5 +8,5 @@ define("INDEX_INTRO_STYL","index_intro");
 define("NOTE_BLOCK","note_block");
 define("INFO_BLOCK","info_block");
 define("theme_ppath","C:/hexo/joseph/mysite/units/theme-blueboard/");
-define("theme_path","/t/mysite/units/theme-blueboard/");
+define("theme_path","/units/theme-blueboard/");
 ?>

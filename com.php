@@ -18,40 +18,7 @@
     OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-?>
-<!doctype html>
-<html>
-<head>
-<?php
-include("../res/conf/const.php");
-include(_INCLUDE_);
-echo '<title>404 | '.SITE_NAME.'</title>';
-define("INDEX_IMG_STRL", 'index_img');
-define("INDEX_H1_STRL", 'index_h1');
-define("INDEX_INTRO_STRL", 'index_intro');
-?>
-</head> 
-<body>
-<?php
-function main_container() {
-	global $othersite;
-	
-	EasyHtml::div_start('main_container',NULL,'center');
-		echo '<img src="'.base.'/res/img/errorpage/404.png"/><br>';
-		
-		EasyHtml::a_start(base.'/','_self');
-			EasyHtml::div_start('button_small',NULL,NULL);
-			EasyHtml::p_start(NULL,NULL);
-				echo '主页';
-			EasyHtml::p_end();
-			EasyHtml::div_end();
-		EasyHtml::a_end();
-	EasyHtml::div_end();
-}
 
-head_init();
-main_container();
-foot_init();
+Header('Location: ./units/mysconfig/install.php');
+
 ?>
-</body>
-</html>

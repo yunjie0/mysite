@@ -28,7 +28,7 @@ function side_init() {
 	EasyHtml::div_start('side_buttons',NULL,NULL);
 	for ($i=0;$i<count($array_side);$i++) {
 		echo '<div class="side_button_0" onclick="'.$array_side[$i].'_click()">
-			<img src="'.theme_path.'/icon/side/'.$array_side[$i].'.png"></div>';
+			<img src="'.theme_path.'icon/side/'.$array_side[$i].'.png"></div>';
 	}
 	EasyHtml::div_end();
 }

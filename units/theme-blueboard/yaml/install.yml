@@ -1,5 +1,3 @@
-path: '/units/theme-blueboard/'
-
 # do not change unless you know what you will do
 head:
   - <html lang="zh-CN">
@@ -14,6 +12,7 @@ head:
 
 inc_func:
   - 'php/bg.php'
+  - 'php/other.php'
   - 'php/head.php'
   - 'php/side.php'
   - 'php/foot.php'

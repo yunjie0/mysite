@@ -5,7 +5,7 @@ theme: 'blueboard'
 php_base: 'C:/hexo/joseph/mysite'
 
 # base path in html (default value is '')
-html_base: '/t/mysite'
+html_base: ''
 
 # name of your site
 site_name: 'MYS'
@@ -56,11 +56,6 @@ units:
         - 'https://josephz.top/res/img/pictures/wall/2.jpg'
         - 'https://josephz.top/res/img/pictures/wall/3.jpg'
         - 'https://josephz.top/res/img/pictures/wall/4.jpg'
-        - 'https://josephz.top/res/img/pictures/wall/5.jpg'
-        - 'https://josephz.top/res/img/pictures/wall/6.jpg'
-        - 'https://josephz.top/res/img/pictures/wall/7.jpg'
-        - 'https://josephz.top/res/img/pictures/wall/8.jpg'
-        - 'https://josephz.top/res/img/pictures/wall/9.jpg'
   - name: 'parsedown'
     class: 'function'
     yamldir: 
@@ -74,8 +69,11 @@ units:
     yamldir: 
     conf:
        - enable: true
-         default_cover: '".res."/img/aplayer/default.png'
-
+         config: 'config.js'
+  - name: 'mysnote'
+    class: 'function'
+    yamldir: 
+    conf:
 
 # Comment System
 # like waline

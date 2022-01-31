@@ -57,6 +57,8 @@ function head_init() {
 	EasyHtml::div_start(CON_HEAD,NULL,NULL);
 		head_container();
 	EasyHtml::div_end();
+	
+	otherdiv_head();
 }
 
 ?>

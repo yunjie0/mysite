@@ -1,6 +1,6 @@
 <?php
 /***
-    The Source Code of JOSEPHZ.TOP
+    The Source Code of mys
     (C) 2021-2022 Joseph Z.
     All rights reserved.
     license: BSD 3-Clause 
@@ -19,32 +19,39 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 ?>
-
 <!doctype html>
 <html>
 <head>
 <?php
-    include("../res/conf/const.php");
-	include(_INCLUDE_);
-    echo '<title>403 | '._SITE_NAME_.'</title>';
+include("../res/conf/const.php");
+include(_INCLUDE_);
+echo '<title>403 | '.SITE_NAME.'</title>';
+define("INDEX_IMG_STRL", 'index_img');
+define("INDEX_H1_STRL", 'index_h1');
+define("INDEX_INTRO_STRL", 'index_intro');
 ?>
 </head> 
 <body>
 <?php
-	include(_PAGE_SIDE_);
-?>
-    <div class="container">
-        <center>
-			<img src="<?php echo _HTML_BASE_;?>/res/img/errorpage/403.png"/>
-        </center>
-            <br><a href="<?php echo _HTML_BASE_;?>/" target="_self" rel="noopener">
-                <div class="button_small">
-                    <b style="font-size:15px;">主页</b><br>Index
-                </div>
-            </a>
-    </div>
-<?php
-    include(_PAGE_FOOTER_);
+function main_container() {
+	global $othersite;
+	
+	EasyHtml::div_start('main_container',NULL,'center');
+		echo '<img src="'.base.'/res/img/errorpage/403.png"/><br>';
+		
+		EasyHtml::a_start(base.'/','_self');
+			EasyHtml::div_start('button_small',NULL,NULL);
+			EasyHtml::p_start(NULL,NULL);
+				echo '主页';
+			EasyHtml::p_end();
+			EasyHtml::div_end();
+		EasyHtml::a_end();
+	EasyHtml::div_end();
+}
+
+head_init();
+main_container();
+foot_init();
 ?>
 </body>
 </html>
