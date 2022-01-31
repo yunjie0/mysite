@@ -35,15 +35,14 @@ define("INDEX_INTRO_STRL", 'index_intro');
 function main_container() {
 	global $parsedown;
 	
-	echo '<div class="main_container">';
-	echo '<h1 class="'.INDEX_H1_STYL.'" align="center">'.HOME_NAME.'</h1>';
-	require_once pbase.$parsedown['path'].'Parsedown.php';
-	$Parsedown = new Parsedown();
-	
-	$fp = fopen('./main.md', 'r');
-	echo $Parsedown->text(fread($fp,filesize("./main.md")));
-
-	echo '</div>';
+	EasyHtml::div_start('main_container',NULL,NULL);
+		echo '<h1 class="'.INDEX_H1_STYL.'" align="center">'.HOME_NAME.'</h1>';
+		
+		require_once pbase.$parsedown['path'].'Parsedown.php';
+		$Parsedown = new Parsedown();
+		$fp = fopen('./main.md', 'r');
+		echo $Parsedown->text(fread($fp,filesize("./main.md")));
+	EasyHtml::div_end();
 }
 
 head_init();

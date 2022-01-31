@@ -21,24 +21,42 @@
 
 function head_container() {
 	global $othersite;
-	echo '<a href='.base.'/ target="_self" rel="noopener">
-	<img style="border-radius:200px;zoom:20%;" id="img_r" src="'.AVATAR.'"></a>';
-	echo '<a href='.base.'/ target="_self" rel="noopener"><font><div class="head_card">主页</font></div></a>
-	<a href='.base.'/home target="_self" rel="noopener"><font><div class="head_card">'.HOME_NAME.'</font></div></a>';
+	
+	EasyHtml::a_start(base.'/','_self');
+		echo '<img style="border-radius:200px;zoom:20%;" id="img_r" src="'.AVATAR.'">';
+	EasyHtml::a_end();
+	
+	EasyHtml::a_start(base.'/','_self');
+		EasyHtml::div_start('head_card',NULL,NULL);
+			echo '主页';
+		EasyHtml::div_end();
+	EasyHtml::a_end();
+	
+	EasyHtml::a_start(base.'/home','_self');
+		EasyHtml::div_start('head_card',NULL,NULL);
+			echo HOME_NAME;
+		EasyHtml::div_end();
+	EasyHtml::a_end();
+	
 	for ($i=0; $i<count($othersite); $i++) {
-		echo '<a href='.$othersite[$i]['link'].' target="_self" rel="noopener"><font><div class="head_card">'.$othersite[$i]['name'].'</font></div></a>';
+		EasyHtml::a_start($othersite[$i]['link'],'_self');
+			EasyHtml::div_start('head_card',NULL,NULL);
+				echo $othersite[$i]['name'];
+			EasyHtml::div_end();
+		EasyHtml::a_end();
 	}
 }
 
 function back_init() {
-	echo '<div class="back"></div>';
+	EasyHtml::div_start('back',NULL,NULL);
+	EasyHtml::div_end();
 }
 
 function head_init() {
 	back_init();
-	echo '<div class="'.CON_HEAD.'">';
-	head_container();
-	echo '</div>';
+	EasyHtml::div_start(CON_HEAD,NULL,NULL);
+		head_container();
+	EasyHtml::div_end();
 }
 
 ?>

@@ -16,6 +16,11 @@ $units=[
 "yamldir"=>"",
 ],
 3=>[
+"name"=>"mbase",
+"class"=>"lib",
+"yamldir"=>"",
+],
+4=>[
 "name"=>"aplayer",
 "class"=>"function",
 "yamldir"=>"",
@@ -39,6 +44,11 @@ $theme_blueboard=[
 $parsedown=[
     'path' => "/units/parsedown/",
 ];
+$lib_mbase=[
+    'main_php' => "main.php",
+    'path' => "/units/lib-mbase/",
+];
+include("C:/hexo/joseph/mysite/units/lib-mbase/main.php");
 $aplayer=[
     'path' => "/units/aplayer/",
     0 => [

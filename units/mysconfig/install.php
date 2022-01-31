@@ -238,6 +238,20 @@ if ($value['units'] != NULL)
 				VarDump::dump($u_value);
 			}
 		}
+		else if ($value['units'][$i]['class'] == 'lib')
+		{
+			$u_value = Yaml::parseFile('../lib-'.$value['units'][$i]['name'].'/'.$yaml_dir.'/install.yml');
+			fwrite($fp, '$lib_'.$value['units'][$i]['name'].'=');
+			if ($value['units'][$i]['conf'] != NULL) 
+			{
+				VarDump::dump($u_value+$value['units'][$i]['conf']);
+			}
+			else
+			{
+				VarDump::dump($u_value);
+			}
+			ins($fp,$value['php_base'].'/units/lib-'.$value['units'][$i]['name'].'/'.$u_value['main_php']);
+		}
 	}
 }
 

@@ -36,23 +36,42 @@ define("INDEX_INTRO_STRL", 'index_intro');
 function main_container() {
 	global $othersite;
 	
-	echo '<div class="'.INDEX_STYL.'"><div class="'.INFO_BLOCK.'">
-	<img class="'.INDEX_IMG_STYL.'" id="img_r"	src='.AVATAR.' /><br>
-	<b class="'.INDEX_H1_STYL.'">'.SITE_NAME.'</b>
-	<p class="'.INDEX_INTRO_STYL.'">'.INTRO.'</p></div>';
+	EasyHtml::div_start(INDEX_STYL,NULL,NULL);
+		EasyHtml::div_start(INFO_BLOCK,NULL,NULL);
+			echo '<img class="'.INDEX_IMG_STYL.'" id="img_r" src='.AVATAR.' />
+			<br><b class="'.INDEX_H1_STYL.'">'.SITE_NAME.'</b>';
+			
+			EasyHtml::p_start(INDEX_INTRO_STYL,NULL);
+				echo INTRO;
+			EasyHtml::p_end();
+		EasyHtml::div_end();
 	
-	echo '<div class="'.NOTE_BLOCK.'">条子';
+		EasyHtml::div_start(NOTE_BLOCK,NULL,NULL);
+//			note_init();
+		EasyHtml::div_end();
+	EasyHtml::div_end();
 	
-	echo '</div></div>';
-	echo '<div class="main_container" align="center">';
-	
-	// Home Page
-	echo '<a href="'.base.'/home" target="_self" rel="noopener"><div class="button_big"><p style="font-size:15px;">'.HOME_NAME.'</p></div></a>';
-	// Other Page
-	for ($i=0; $i<count($othersite); $i++) {
-		echo '<a href="'.$othersite[$i]['link'].'" target="_self" rel="noopener"><div class="button_big"><p style="font-size:15px;">'.$othersite[$i]['name'].'</p></div></a>';
-	}
-	echo '</div>';
+	EasyHtml::div_start('main_container',NULL,'center');
+		// Home Page
+		EasyHtml::a_start(base.'/home','_self');
+			EasyHtml::div_start('button_big',NULL,NULL);
+			EasyHtml::p_start(NULL,NULL);
+				echo HOME_NAME;
+			EasyHtml::p_end();
+			EasyHtml::div_end();
+		EasyHtml::a_end();
+		
+		// Other Page
+		for ($i=0; $i<count($othersite); $i++) {
+			EasyHtml::a_start($othersite[$i]['link'],'_self');
+				EasyHtml::div_start('button_big',NULL,NULL);
+				EasyHtml::p_start(NULL,NULL);
+					echo $othersite[$i]['name'];
+				EasyHtml::p_end();
+				EasyHtml::div_end();
+			EasyHtml::a_end();
+		}
+	EasyHtml::div_end();
 }
 
 head_init();

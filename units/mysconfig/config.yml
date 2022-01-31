@@ -38,7 +38,7 @@ site_birthday: '07/21/2021'
 # format:
 #   - name: 
 #     class: 
-#     yamldir:
+#     yamldir:  
 #     conf:
 #       - xxx: xxx
 #       - yyy: yyy
@@ -65,7 +65,11 @@ units:
     class: 'function'
     yamldir: 
     conf:
-  - name: aplayer
+  - name: 'mbase'
+    class: 'lib'
+    yamldir: 
+    conf:
+  - name: 'aplayer'
     class: 'function'
     yamldir: 
     conf:

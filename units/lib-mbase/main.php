@@ -1,6 +1,6 @@
 <?php
 /***
-    The Source Code of mys
+    The Source Code of mbase
     (C) 2021-2022 Joseph Z.
     All rights reserved.
     license: BSD 3-Clause 
@@ -19,17 +19,6 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-function side_init() {
-	$array_side=array(
-		'darkmode',
-		'up'
-	);
-	
-	EasyHtml::div_start('side_buttons',NULL,NULL);
-	for ($i=0;$i<count($array_side);$i++) {
-		echo '<div class="side_button_0" onclick="'.$array_side[$i].'_click()">
-			<img src="'.theme_path.'/icon/side/'.$array_side[$i].'.png"></div>';
-	}
-	EasyHtml::div_end();
-}
+include(pbase.$lib_mbase['path'].'easyhtml.php');
+
 ?>

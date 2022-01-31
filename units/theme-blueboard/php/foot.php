@@ -22,19 +22,41 @@
 function foot_container() {
 	global $othersite;
 	
-	echo '<p>(C) 2021-2022 WCC</p><p>MyS ❤ Blueboard</p><a href='.base.'/ target="_blank">主页</a> | <a href='.base.'/home target="_blank">'.HOME_NAME.'</a>';
-	for ($i=0; $i<count($othersite); $i++) {
-		echo ' | <a href='.$othersite[$i]['link'].' target="_blank">'.$othersite[$i]['name'].'</a>';
+	EasyHtml::p_start(NULL,NULL);
+		echo '(C) 2021-2022 WCC</p><p>MyS ❤ Blueboard';
+	EasyHtml::p_end();
+	
+	EasyHtml::a_start(base.'/','_blank');
+		echo '主页';
+	EasyHtml::a_end();
+	echo ' | ';
+	EasyHtml::a_start(base.'/home','_blank');
+		echo HOME_NAME;
+	EasyHtml::a_end();
+	
+	for ($i=0; $i<count($othersite); $i++) {echo ' | ';
+		EasyHtml::a_start($othersite[$i]['link'],'_blank');
+			echo $othersite[$i]['name'];
+		EasyHtml::a_end();
 	}
-	echo '</p><p>本站已勉强存活了<script language = "JavaScript"type = "text/javascript" >var urodz = new Date("'.SITE_BIRTHDAY.'");var now = new Date();var ile = now.getTime() - urodz.getTime();var dni = Math.floor(ile / (1000 * 60 * 60 * 24));document.write( + dni)</script>天</p>';
+	
+	EasyHtml::p_start(NULL,NULL);
+		echo '本站已勉强存活了<script>
+				var urodz = new Date("'.SITE_BIRTHDAY.'");
+				var now = new Date();
+				var ile = now.getTime() - urodz.getTime();
+				var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+				document.write( + dni)
+			</script>天';
+	EasyHtml::p_end();
 }
 
 function foot_init() {
 	side_init();
 	
-	echo '<div class="'.CON_FOOT.'">';
-	foot_container();
-	echo '</div>';
+	EasyHtml::div_start(CON_FOOT,NULL,NULL);
+		foot_container();
+	EasyHtml::div_end();
 }
 
 ?>
