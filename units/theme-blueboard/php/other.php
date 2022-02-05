@@ -28,6 +28,12 @@ function otherdiv_head() {
 function otherdiv_foot() {
 	side_init();	// Side buttons
 	
+	/* waline */
+	global $waline;
+	EasyHtml::div_start(NULL,'comment_con',NULL);
+	include(pbase.$waline['path'].$waline['start']);
+	EasyHtml::div_end();
+	
 	/* Aplayer */
 	global $aplayer;
 	include(pbase.$aplayer['path'].$aplayer['main_php']);

@@ -26,9 +26,6 @@
 include("./res/conf/const.php");
 include(_INCLUDE_);
 echo '<title>'.SITE_NAME.'</title>';
-define("INDEX_IMG_STRL", 'index_img');
-define("INDEX_H1_STRL", 'index_h1');
-define("INDEX_INTRO_STRL", 'index_intro');
 ?>
 </head> 
 <body>
@@ -52,7 +49,7 @@ function main_container() {
 		EasyHtml::div_end();
 	EasyHtml::div_end();
 	
-	EasyHtml::div_start('main_container',NULL,'center');
+	EasyHtml::div_start('index_container',NULL,'center');
 		// Home Page
 		EasyHtml::a_start(base.'/home','_self');
 			EasyHtml::div_start('button_big',NULL,NULL);

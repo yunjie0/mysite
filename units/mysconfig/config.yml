@@ -74,6 +74,11 @@ units:
     class: 'function'
     yamldir: 
     conf:
+  - name: 'waline'
+    class: 'function'
+    yamldir: 
+    conf: 
+      - url: 'https://blog-api-mroxoa8vg-jiaxu07.vercel.app'
 
 # Comment System
 # like waline

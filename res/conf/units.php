@@ -30,6 +30,11 @@ $units=[
 "class"=>"function",
 "yamldir"=>"",
 ],
+6=>[
+"name"=>"waline",
+"class"=>"function",
+"yamldir"=>"",
+],
 ];
 $theme_blueboard=[
     0 => [
@@ -59,5 +64,12 @@ $aplayer=[
 ];
 $mysnote=[
     'path' => "/units/mysnote/",
+];
+$waline=[
+    'path' => "/units/waline/",
+    'start' => "start.php",
+    0 => [
+        'url' => "https://blog-api-mroxoa8vg-jiaxu07.vercel.app",
+    ],
 ];
 ?>

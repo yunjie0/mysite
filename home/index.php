@@ -25,23 +25,14 @@
 include("../res/conf/const.php");
 include(_INCLUDE_);
 echo '<title>'.HOME_NAME.'</title>';
-define("INDEX_IMG_STRL", 'index_img');
-define("INDEX_H1_STRL", 'index_h1');
-define("INDEX_INTRO_STRL", 'index_intro');
 ?>
 </head>
 <body>
 <?php
 function main_container() {
-	global $parsedown;
-	
 	EasyHtml::div_start('main_container',NULL,NULL);
 		echo '<h1 class="'.INDEX_H1_STYL.'" align="center">'.HOME_NAME.'</h1>';
-		
-		require_once pbase.$parsedown['path'].'Parsedown.php';
-		$Parsedown = new Parsedown();
-		$fp = fopen('./main.md', 'r');
-		echo $Parsedown->text(fread($fp,filesize("./main.md")));
+		HomeIndex::out_markdown();
 	EasyHtml::div_end();
 }
 
@@ -51,3 +42,16 @@ foot_init();
 ?>
 </body>
 </html>
+
+<?php
+class HomeIndex {
+	public static function out_markdown() {
+		global $parsedown;
+		
+		require_once pbase.$parsedown['path'].'Parsedown.php';
+		$Parsedown = new Parsedown();
+		$fp = fopen('./main.md', 'r');
+		echo $Parsedown->text(fread($fp,filesize("./main.md")));
+	}
+}
+?>

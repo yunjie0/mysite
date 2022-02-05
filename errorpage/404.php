@@ -26,9 +26,6 @@
 include("../res/conf/const.php");
 include(_INCLUDE_);
 echo '<title>404 | '.SITE_NAME.'</title>';
-define("INDEX_IMG_STRL", 'index_img');
-define("INDEX_H1_STRL", 'index_h1');
-define("INDEX_INTRO_STRL", 'index_intro');
 ?>
 </head> 
 <body>

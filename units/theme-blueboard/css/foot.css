@@ -37,3 +37,23 @@
     -webkit-backdrop-filter: blur( 12px );
 }
 
+#comment_con {
+    text-align:center;
+    margin: 1% auto 0;
+    width: 80%;
+    background: var(--theme-color);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 3px;
+    border: 1px solid var(--theme-card-b);
+    transition: 0.25s;
+	color: var(--font-color);
+	padding: 1% 2%;
+	z-index: 2;
+}
+#comment_con:hover{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+}
+

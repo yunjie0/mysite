@@ -41,13 +41,7 @@ function foot_container() {
 	}
 	
 	EasyHtml::p_start(NULL,NULL);
-		echo '本站已勉强存活了<script>
-				var urodz = new Date("'.SITE_BIRTHDAY.'");
-				var now = new Date();
-				var ile = now.getTime() - urodz.getTime();
-				var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-				document.write( + dni)
-			</script>天';
+		Foot::sitetime(SITE_BIRTHDAY);
 	EasyHtml::p_end();
 }
 
@@ -57,6 +51,21 @@ function foot_init() {
 	EasyHtml::div_start(CON_FOOT,NULL,NULL);
 		foot_container();
 	EasyHtml::div_end();
+}
+
+?>
+
+<?php
+class Foot {
+	public static function sitetime($birthday) {
+		echo '本站已勉强存活了<script>
+				var urodz = new Date("'.$birthday.'");
+				var now = new Date();
+				var ile = now.getTime() - urodz.getTime();
+				var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+				document.write( + dni)
+			</script>天';
+	}
 }
 
 ?>

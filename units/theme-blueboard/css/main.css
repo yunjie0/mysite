@@ -19,7 +19,7 @@
 
 .main_container {
     width: 80%;
-    margin: 1% auto 0;
+    margin: 67px auto 0;
     background: var(--theme-color);
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
@@ -36,8 +36,29 @@
     -webkit-backdrop-filter: blur( 12px );
 }
 
+.index_container {
+    width: 80%;
+    margin: 8px auto 0;
+    background: var(--theme-color);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 3px;
+    border: 1px solid var(--theme-card-b);
+    transition: 0.25s;
+	padding: 1% 2%;
+	color: var(--font-color);
+	z-index: 2;
+}
+.index_container:hover{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+}
+
 .index_styl {
     width: 100%;
+	height: calc(70vh);
+    margin: 67px auto 0;
 	background-color: rgba(128,128,128,0.4);
     backdrop-filter: blur( 4px );
     text-align: center;

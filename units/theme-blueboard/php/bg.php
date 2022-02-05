@@ -25,7 +25,9 @@ echo '
    --bg-color: #cccccc;
 }
 body {
-	background-color: var(--bg-color);margin:0;padding:0;
+	background-color: var(--bg-color);
+	margin:0;
+	padding:0;
 ';
 if ($theme_blueboard[0]['background'] != NULL) {
 	echo 'background:url("'.$theme_blueboard[0]['background'][rand(0,count($theme_blueboard[0]['background'])-1)].'");';

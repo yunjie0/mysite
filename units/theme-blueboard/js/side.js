@@ -29,3 +29,18 @@ function up_click() {
     document.documentElement.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 };
+/* 
+jQuery.ajax({
+    type: "POST",
+    dataType: 'json',
+	url: '/units/theme-blueboard/php/headbar.php',
+	data: {
+		val: 'abc'
+	},
+	success: function(msg){// msg: php返回内容
+		alert('成功');
+	},
+	error:function(msg){// 提交失败
+		alert('失败');
+	}
+}); */
