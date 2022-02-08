@@ -93,7 +93,7 @@ units:
     class: 'function'
     yamldir: 
     conf: 
-      - url: 'https://blog-api-mroxoa8vg-jiaxu07.vercel.app'
+      - url: ''
 
 # Comment System
 # like waline
