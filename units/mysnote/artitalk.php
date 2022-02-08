@@ -21,17 +21,14 @@
 
 ?>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk.css" /> 
-<script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk_user.js"></script>
-<!-- create the container of Hexo++ Talk -->
-<div id="hpp_talk"></div>
-
+<!-- include artitalk -->
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<!-- the container of artitalk -->
+<div id="artitalk_main"></div>
 <script>
-new hpp_talk({
-    id: "hpp_talk",      // container ID
-    domain: "<?php echo $mysnote[1]['hpptalk'][0]['domain']?>",
-    limit: 2,
-    start: 0,
-    themecss: "<?php echo $mysnote[2]['hpptalk'][0]['theme']?>"
-});
+new Artitalk({
+    appId: '<?php echo $mysnote[1]['artitalk'][0]['appid']?>', // LeanCloud appId
+    appKey: '<?php echo $mysnote[1]['artitalk'][0]['appkey']?>', // LeanCloud appKey
+    pageSize: 1
+})
 </script>

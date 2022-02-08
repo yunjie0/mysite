@@ -48,7 +48,7 @@ EasyHtml::div_start('main_container',NULL,NULL);
 	for ($i=0;$i<count($value);$i++) {
 		EasyHtml::a_start($value[$i]['link'],'_blank');
 			echo '<div id="card" align="center" style="width:40%">
-			<img style="width:18px;height:18px" src='.get_ico($value[$i]['link']).' />
+			<img style="width:18px;height:18px" src='.get_ico($value[$i]['icon']).' />
 			<b style="font-size:18px">'.$value[$i]['name'].'</b>
 			<br>'.$value[$i]['desc'].'</div>';
 		EasyHtml::a_end();
@@ -62,12 +62,12 @@ foot_init();
 </html>
 
 <?php
-function get_ico($site) {
-	if (file_exists(pbase.'/res/img/favicon'.$site.'.ico')) {
-		return pbase.'/res/img/favicon'.$site.'.ico';
+function get_ico($a) {
+	if ($a != 'none') {
+		return $a;
 	}
 	else {
-		return $site.'/favicon.ico';
+		return res.'/avatar.png';
 	}
 }
 ?>

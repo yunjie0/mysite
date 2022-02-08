@@ -37,7 +37,12 @@ class MysNote
             include(pbase.$webclock['path'].'index.php');
 
             /* Hexo++ Talk */
-            include(pbase.$mysnote['path'].'hppnote.php');
+            if ($mysnote[0]['hpptalk'][0]['enable'])
+                include(pbase.$mysnote['path'].'hppnote.php');
+
+            /* Artitalk */
+            if ($mysnote[1]['artitalk'][0]['enable'])
+                include(pbase.$mysnote['path'].'artitalk.php');
 
             /* yiyan */
 			echo '<div id="yiyan"><p id="hitokoto">获取中...</p></div>';

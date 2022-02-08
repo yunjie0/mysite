@@ -1,4 +1,3 @@
-<?php
 /***
     The Source Code of mysnote
     (C) 2021-2022 Joseph Z.
@@ -19,19 +18,8 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-?>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk.css" /> 
-<script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk_user.js"></script>
-<!-- create the container of Hexo++ Talk -->
-<div id="hpp_talk"></div>
-
-<script>
-new hpp_talk({
-    id: "hpp_talk",      // container ID
-    domain: "<?php echo $mysnote[1]['hpptalk'][0]['domain']?>",
-    limit: 2,
-    start: 0,
-    themecss: "<?php echo $mysnote[2]['hpptalk'][0]['theme']?>"
-});
-</script>
+#artit {
+    background: rgba(130,130,130,0.1);
+    border-radius: 5px;
+}

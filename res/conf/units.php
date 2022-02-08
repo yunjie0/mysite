@@ -75,8 +75,18 @@ $mysnote=[
     0 => [
         'hpptalk' => [
             0 => [
+                'enable' => false,
                 'domain' => "",
-                'theme' => "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN@master/plugin/style/heimu.css",
+                'theme' => "",
+            ],
+        ],
+    ],
+    1 => [
+        'artitalk' => [
+            0 => [
+                'enable' => true,
+                'appid' => "QATHe8VPLQiNKFjL40MGtWvP-MdYXbMMI",
+                'appkey' => "uAsKE43jUSPnBEcaM9HoA9w6",
             ],
         ],
     ],

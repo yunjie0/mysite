@@ -77,6 +77,8 @@
 }
 
 .index_intro {
+    width:60%;
+    margin: 1% auto 0;
 	font-size:20px;
 	color: var(--font-color);
 	text-shadow: 1px 2px 7px var(--font-color);

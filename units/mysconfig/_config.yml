@@ -82,8 +82,13 @@ units:
     yamldir: 
     conf:
       - hpptalk: 
-         - domain: ''
-           theme: 'https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN@master/plugin/style/heimu.css'
+         - enable: false
+           domain: ''
+           theme: ''
+      - artitalk: 
+         - enable: true
+           appid: 'QATHe8VPLQiNKFjL40MGtWvP-MdYXbMMI'
+           appkey: 'uAsKE43jUSPnBEcaM9HoA9w6'
   - name: 'waline'
     class: 'function'
     yamldir: 

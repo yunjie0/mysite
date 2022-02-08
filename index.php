@@ -39,9 +39,9 @@ function main_container() {
 			echo '<br><img class="'.INDEX_IMG_STYL.'" id="img_r" src='.AVATAR.' />
 			<br><b class="'.INDEX_H1_STYL.'">'.SITE_NAME.'</b>';
 			
-			EasyHtml::p_start(INDEX_INTRO_STYL,NULL);
+			EasyHtml::div_start(INDEX_INTRO_STYL,NULL,NULL);
 				echo INTRO;
-			EasyHtml::p_end();
+			EasyHtml::div_end();
 		EasyHtml::div_end();
 	
 		EasyHtml::div_start(NOTE_BLOCK,NULL,NULL);

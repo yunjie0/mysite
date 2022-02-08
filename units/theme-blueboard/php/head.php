@@ -23,7 +23,7 @@ function head_container() {
 	global $othersite;
 	
 	EasyHtml::a_start(base.'/','_self');
-		echo '<img style="border-radius:200px;zoom:20%;" id="img_r" src="'.AVATAR.'">';
+		echo '<img style="border-radius:200px" width=48px height=48px id="img_r" src="'.AVATAR.'">';
 	EasyHtml::a_end();
 	
 	EasyHtml::a_start(base.'/','_self');
