@@ -87,8 +87,8 @@ units:
            theme: ''
       - artitalk: 
          - enable: true
-           appid: 'QATHe8VPLQiNKFjL40MGtWvP-MdYXbMMI'
-           appkey: 'uAsKE43jUSPnBEcaM9HoA9w6'
+           appid: ''
+           appkey: ''
   - name: 'waline'
     class: 'function'
     yamldir: 
