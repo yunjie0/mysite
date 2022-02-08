@@ -26,11 +26,16 @@ $units=[
 "yamldir"=>"",
 ],
 5=>[
-"name"=>"mysnote",
+"name"=>"webclock",
 "class"=>"function",
 "yamldir"=>"",
 ],
 6=>[
+"name"=>"mysnote",
+"class"=>"function",
+"yamldir"=>"",
+],
+7=>[
 "name"=>"waline",
 "class"=>"function",
 "yamldir"=>"",
@@ -62,8 +67,19 @@ $aplayer=[
         'config' => "config.js",
     ],
 ];
+$webclock=[
+    'path' => "/units/webclock/",
+];
 $mysnote=[
     'path' => "/units/mysnote/",
+    0 => [
+        'hpptalk' => [
+            0 => [
+                'domain' => "",
+                'theme' => "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN@master/plugin/style/heimu.css",
+            ],
+        ],
+    ],
 ];
 $waline=[
     'path' => "/units/waline/",

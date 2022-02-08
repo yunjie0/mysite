@@ -20,14 +20,44 @@
 */
 
 echo '<link rel="stylesheet" href="'.base.$mysnote['path'].'css/card.css">';
+echo '<link rel="stylesheet" href="'.base.$mysnote['path'].'css/hpp_talk.css">';
+echo '<link rel="stylesheet" href="'.base.$mysnote['path'].'css/yiyan.css">';
 
 class MysNote
 {
-	public static function init()
+	public static function init()   // front
 	{
+        global $mysnote;
 		EasyHtml::div_start(NULL,'notecard',NULL);
-			echo 'Hello,world!';
+            /* Webclock */
+            global $webclock;
+            $dir=base.$webclock['path'];
+            $hide_title=true;
+            $hide_bgcolor=true;
+            include(pbase.$webclock['path'].'index.php');
+
+            /* Hexo++ Talk */
+            include(pbase.$mysnote['path'].'hppnote.php');
+
+            /* yiyan */
+			echo '<div id="yiyan"><p id="hitokoto">获取中...</p></div>';
 		EasyHtml::div_end();
+
+        echo '<br>';
 	}
 }
 ?>
+<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+<script>
+    fetch('https://v1.hitokoto.cn')
+    .then(function (res){      
+        return res.json();
+    })
+    .then(function (data) {      
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto; 
+    })
+    .catch(function (err) {      console.error(err);
+    })
+</script>

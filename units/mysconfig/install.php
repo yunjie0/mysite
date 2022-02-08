@@ -40,7 +40,7 @@ refresh_dir('../../res/conf/');
 
 
 try {
-    $value = Yaml::parseFile('./config.yml');
+    $value = Yaml::parseFile('./_config.yml');
 } catch (ParseException $e) {
     echo $e->getMessage();
 }

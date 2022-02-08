@@ -1,0 +1,7 @@
+- name: 'Github'
+  link: 'https://github.com'
+  desc: 'Where the world builds software'
+- name: 'IURT'
+  link: 'https://iurt.net'
+  desc: 'Interuseration'
+  

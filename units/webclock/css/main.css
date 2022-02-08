@@ -1,6 +1,5 @@
-<?php
 /***
-    The Source Code of mysinstall
+    The Source Code of WEB CLOCK
     (C) 2021-2022 Joseph Z.
     All rights reserved.
     license: BSD 3-Clause 
@@ -19,10 +18,23 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-$php = 'D:/php/php.exe';
-
-echo 'Install symfony/yaml ... ';
-system($php . ' ./composer.phar config -g repo.packagist composer https://mirrors.aliyun.com/composer/');
-system($php . ' ./composer.phar require symfony/yaml');
-
-?>
+.webclock_maincard {
+	width: 90%;
+	margin: 5% auto 0;
+	background-color: #d0ffff;
+	padding: 2% 5%;
+	border-radius: 20px
+}
+#bl {
+	width: 70%;
+	height: 10px;
+	position: relative;
+	border-radius: 13px;
+	border: 2px solid;
+	margin: 0 auto;
+}
+aside{
+	height: 10px;
+	border-radius: 13px;
+	background: rgba(0,200,255,0.75);
+}

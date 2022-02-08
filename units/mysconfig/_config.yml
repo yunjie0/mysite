@@ -21,6 +21,9 @@ avatar: '".res."/avatar.png'
 
 # other sites
 othersite:
+  - flag: 'goto'
+    name: '去往'
+    link: '/goto'
   - flag: 'blog'
     name: '博客'
     link: 'https://blog.josephz.top'
@@ -70,10 +73,17 @@ units:
     conf:
        - enable: true
          config: 'config.js'
+  - name: 'webclock'
+    class: 'function'
+    yamldir: 
+    conf:
   - name: 'mysnote'
     class: 'function'
     yamldir: 
     conf:
+      - hpptalk: 
+         - domain: ''
+           theme: 'https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN@master/plugin/style/heimu.css'
   - name: 'waline'
     class: 'function'
     yamldir: 

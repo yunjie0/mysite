@@ -86,14 +86,14 @@
 }
 
 .info_block {
-	width: 55%;
+	width: 50%;
 	z-index: 3;
 	display: table-cell;
 	color: var(--font-color);
 }
 
 .note_block {
-	width: 45%;
+	width: 50%;
 	z-index: 3;
 	display: table-cell;
 	color: var(--font-color);
