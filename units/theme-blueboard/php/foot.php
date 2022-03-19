@@ -23,7 +23,7 @@ function foot_container() {
 	global $othersite;
 	
 	EasyHtml::p_start(NULL,NULL);
-		echo '(C) 2021-2022 WCC</p><p>MyS ❤ Blueboard';
+		echo '(C) 2021-2022 IURT</p><p>MyS ❤ Blueboard';
 	EasyHtml::p_end();
 	
 	EasyHtml::a_start(base.'/','_blank');

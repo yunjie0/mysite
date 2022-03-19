@@ -1,4 +1,3 @@
-<?php
 /***
     The Source Code of mysnote
     (C) 2021-2022 Joseph Z.
@@ -19,16 +18,9 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-?>
+function get_yiyan() {
+    const yiyan = document.getElementById('yiyan_text');
+    yiyan.innerHTML = yiyan_json.saying[Math.round(Math.random() * (yiyan_json.saying.length-1))];
+}
 
-<!-- include artitalk -->
-<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
-<!-- the container of artitalk -->
-<div id="artitalk_main"></div>
-<script>
-new Artitalk({
-    appId: '<?php echo $mysnote[0]['artitalk'][0]['appid']?>', // LeanCloud appId
-    appKey: '<?php echo $mysnote[0]['artitalk'][0]['appkey']?>', // LeanCloud appKey
-    pageSize: 1
-})
-</script>
+setInterval(get_yiyan, 10000);

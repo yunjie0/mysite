@@ -10,7 +10,7 @@ var solarTerms = "";
     var tmp2 = tmp1.getUTCDate();
     if (tmp2==dd)
         solarTerms = solarTerm[mm*2+1];
-    console.log(solarTerms);
+    //console.log(solarTerms);
     tmp1 = new Date((31556925974.7*(yyyy-1900)+sTermInfo[mm*2]*60000)+Date.UTC(1900,0,6,2,5));
     tmp2= tmp1.getUTCDate();
     if (tmp2==dd)

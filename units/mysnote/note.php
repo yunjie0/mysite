@@ -19,9 +19,9 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-echo '<link rel="stylesheet" href="'.base.$mysnote['path'].'css/card.css">';
-echo '<link rel="stylesheet" href="'.base.$mysnote['path'].'css/hpp_talk.css">';
-echo '<link rel="stylesheet" href="'.base.$mysnote['path'].'css/yiyan.css">';
+EasyHtml::include_css(base.$mysnote['path'].'css/card.css');
+EasyHtml::include_css(base.$mysnote['path'].'css/hpp_talk.css');
+EasyHtml::include_css(base.$mysnote['path'].'css/yiyan.css');
 
 class MysNote
 {
@@ -41,28 +41,28 @@ class MysNote
                 include(pbase.$mysnote['path'].'hppnote.php');
 
             /* Artitalk */
-            if ($mysnote[1]['artitalk'][0]['enable'])
+            if ($mysnote[0]['artitalk'][0]['enable'])
                 include(pbase.$mysnote['path'].'artitalk.php');
 
             /* yiyan */
-			echo '<div id="yiyan"><p id="hitokoto">获取中...</p></div>';
+			echo '<div id="yiyan" onclick="get_yiyan()"><p id="yiyan_text">获取中...</p></div>';
 		EasyHtml::div_end();
 
         echo '<br>';
 	}
 }
 ?>
-<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+
+<?php
+function get_yiyan_json($filename) {
+    $fp = fopen($filename, 'r');
+    echo fread($fp, filesize($filename));
+}
+?>
+
 <script>
-    fetch('https://v1.hitokoto.cn')
-    .then(function (res){      
-        return res.json();
-    })
-    .then(function (data) {      
-        var hitokoto = document.getElementById('hitokoto');
-        hitokoto.innerText = data.hitokoto; 
-    })
-    .catch(function (err) {      console.error(err);
-    })
+var yiyan_json = <?php get_yiyan_json(pbase.$mysnote['path'].$mysnote[0]['yiyan_json'])?>;
 </script>
+<?php
+EasyHtml::include_js(base.$mysnote['path'].'js/yiyan.js');
+?>

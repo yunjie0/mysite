@@ -88,6 +88,18 @@ class EasyHtml
 	{
 		echo '</a>';
 	}
+	// EasyHtml::include_css
+	public static function include_css($filename)
+	{
+		echo '<link rel="stylesheet" href="'.$filename.'"/>
+';
+	}
+	// EasyHtml::include_js
+	public static function include_js($filename)
+	{
+		echo '<script src="'.$filename.'" type="text/javascript"></script>
+';
+	}
 }
 
 ?>

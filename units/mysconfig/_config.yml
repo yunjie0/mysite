@@ -85,10 +85,11 @@ units:
          - enable: false
            domain: ''
            theme: ''
-      - artitalk: 
+        artitalk: 
          - enable: true
            appid: ''
            appkey: ''
+        yiyan_json: '_yiyan.json'
   - name: 'waline'
     class: 'function'
     yamldir: 

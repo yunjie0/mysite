@@ -80,22 +80,21 @@ $mysnote=[
                 'theme' => "",
             ],
         ],
-    ],
-    1 => [
         'artitalk' => [
             0 => [
                 'enable' => true,
-                'appid' => "QATHe8VPLQiNKFjL40MGtWvP-MdYXbMMI",
-                'appkey' => "uAsKE43jUSPnBEcaM9HoA9w6",
+                'appid' => "",
+                'appkey' => "",
             ],
         ],
+        'yiyan_json' => "_yiyan.json",
     ],
 ];
 $waline=[
     'path' => "/units/waline/",
     'start' => "start.php",
     0 => [
-        'url' => "https://blog-api-mroxoa8vg-jiaxu07.vercel.app",
+        'url' => "",
     ],
 ];
 ?>
